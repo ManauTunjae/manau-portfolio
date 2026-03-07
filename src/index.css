@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box; /* Gör det enklare att räkna på bredder */
+}
+
 body {
   background-color: #1e1b18; /* Justera till den exakta bruna färgen från Canva */
   color: white;

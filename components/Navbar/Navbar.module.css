@@ -1,0 +1,46 @@
+.navWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eeeae673; 
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 40px rgba(0, 0, 0, 0.3);
+  border-radius: 0 0 1rem 1rem;
+}
+
+.navBarName {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+/* Denna skapar det horisontella flödet för hela navbaren */
+:global(.portfolio-container) nav {
+  display: flex;
+  justify-content: space-between; /* Skickar namnet till vänster och knappar till höger */
+  align-items: center;
+  padding: 10px 5%; /* Ger rymd på sidorna och höjden */
+}
+
+.navBarContainer {
+  display: flex;
+  gap: 20px; /* Skapar rymd mellan knapparna */
+}
+
+.navBarContainer button {
+  background-color: #3d362f; /* Gråbruna färgen från skissen */
+  color: rgb(187, 182, 182);
+  border: none;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 9rem;
+  transition: opacity 0.3s ease;
+}
+
+.navBarContainer button:hover {
+  opacity: 0.8;
+}
