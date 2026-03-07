@@ -1,3 +1,4 @@
+import Footer from '../components/Footer/Footer.jsx';
 import Intro from '../components/Intro/Intro.jsx';
 import Navbar from '../components/Navbar/Navbar.jsx';
 import './App.css'
@@ -12,6 +13,9 @@ function App() {
         <main>
           <Intro />
         </main>
+        <footer>
+          <Footer />
+        </footer>
       </div>
     </>
   )

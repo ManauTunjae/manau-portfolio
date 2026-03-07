@@ -1,0 +1,26 @@
+.footerContainer {
+  display: flex;
+  justify-content: center; /* Centrerar innehållet horisontellt */
+  align-items: center;     /* Centrerar innehållet vertikalt */
+  background-color: #eeeae673; 
+  
+  /* Gör att den sitter längst ner */
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  height: 60px; /* Ge den en fast höjd för kontroll */
+  z-index: 1000;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Skugga uppåt istället */
+  border-radius: 1rem 1rem 0 0;
+  padding: 0 20px;
+}
+
+.footerText {
+  font-size: 0.9rem; /* Lite mindre för en mer subtil look som i skissen */
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin: 0; /* Ta bort standard-marginaler från p-taggen */
+}
