@@ -1,0 +1,50 @@
+/* Intro.module.css */
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Texten är vänsterställd i din skiss */
+  padding: 100px 10%; /* Ger luft runt om sektionen */
+  min-height: 80vh; /* Gör att sektionen tar upp det mesta av skärmen */
+}
+
+.headerName {
+  font-size: 6rem; /* Stor och tydlig som i skissen */
+  margin: 0;
+  letter-spacing: 4px; /* Ger den där lyxiga "spaced" looken */
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.statusName {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  font-weight: 400;
+  color: #d4c7b0; /* En guld/beige accentfärg som matchar din design */
+}
+
+.introPara {
+  max-width: 600px; /* Förhindrar att texten blir för bred och svårläst */
+  margin: 1rem 0 1.5rem 0;
+  line-height: 1.6;
+  font-size: 1.7rem;
+  color: #e0e0e0;
+}
+
+.readMoreBtn {
+  background-color: #3d362f; /* Mörkare brun/grå knapp */
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 9rem;
+}
+
+.readMoreBtn:hover {
+  background-color: #524a41; /* Ljusnar upp lite vid hover */
+}
