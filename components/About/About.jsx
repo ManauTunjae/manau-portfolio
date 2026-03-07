@@ -15,9 +15,8 @@ function About() {
         <p className={styles.description}>
           As a developer, I value continuous learning and collaboration. I don’t
           just want to write code—I want to build meaningful experiences that
-          make an impact. When I’m not debugging or exploring new frameworks,
-          you’ll likely find me [insert a hobby, e.g., gaming, drinking coffee,
-          or traveling]!
+          make an impact. When I’m not debugging or exploring new frameworks, you’ll 
+          likely find me logging miles on a treadmill or savoring a coffee at a café in Stockholm.
         </p>
         <button className={styles.myProjectsBtn}>MY PROJECTS</button>
       </div>
