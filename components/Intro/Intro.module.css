@@ -1,12 +1,14 @@
 /* Intro.module.css */
 
 .intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start; /* Texten är vänsterställd i din skiss */
-  padding: 100px 10%; /* Ger luft runt om sektionen */
-  min-height: 100vh; /* Gör att sektionen tar upp det mesta av skärmen */
+  display: grid;
+  /* Här skapar vi de två kolumnerna - 1fr betyder "en del var" */
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 10%;
+  gap: 40px;
 }
 
 .headerName {
@@ -45,6 +47,44 @@
   border-radius: 9rem;
   box-shadow: 0 2px 30px rgba(140, 206, 209, 0.762);
 }
+
+.iconsContent {
+  display: grid;
+  grid-template-columns: repeat(2, auto); 
+  grid-template-rows: repeat(2, auto);
+  justify-content: center; 
+  align-content: center;
+  gap: 6rem;
+  padding: 5rem;
+  font-size: 7rem;
+}
+
+.faInstagram {
+  /* Skapar bakgrunden */
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  border-radius: 1.5rem; 
+  color: white;
+  padding: 5px; 
+}
+
+.faLinkedIn {
+  color: #0077B5;
+}
+
+.faGithub, .faThreads {
+  color: #ffffff; 
+}
+
+.iconsContent a {
+  text-decoration: none; /* Tar bort eventuella understreck */
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.iconsContent a:hover {
+  transform: translateY(-10px); /* Lyfter ikonen lite när man pekar på den */
+  filter: drop-shadow(0 0 15px rgba(166, 93, 231, 0.969));
+  opacity: 0.4; 
+} 
 
 .readMoreBtn:hover {
   background-color: #524a41; /* Ljusnar upp lite vid hover */

@@ -4,6 +4,14 @@ import manauPhoto from "../../src/assets/manau-photo.jpeg";
 function About() {
   return (
     <section className={styles.aboutSection}>
+      <div className={styles.imageContent}>
+        <img
+          src={manauPhoto}
+          alt="Manau Tunjae"
+          className={styles.profileImage}
+        />
+      </div>
+
       <div className={styles.textContent}>
         <h2 className={styles.title}>GET TO KNOW ME</h2>
         <p className={styles.description}>
@@ -19,14 +27,6 @@ function About() {
           likely find me logging miles on a treadmill or savoring a coffee at a café in Stockholm.
         </p>
         <button className={styles.myProjectsBtn}>MY PROJECTS</button>
-      </div>
-
-      <div className={styles.imageContent}>
-        <img
-          src={manauPhoto}
-          alt="Manau Tunjae"
-          className={styles.profileImage}
-        />
       </div>
     </section>
   );
