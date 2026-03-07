@@ -2,10 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #eeeae673; 
+  background-color: #5555574d; 
+  position: fixed;
   top: 0;
+  width: 100%;
   z-index: 1000;
-  box-shadow: 0 2px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 40px rgba(140, 206, 209, 0.655);
   border-radius: 0 0 1rem 1rem;
 }
 
@@ -39,6 +41,7 @@
   cursor: pointer;
   border-radius: 9rem;
   transition: opacity 0.3s ease;
+  box-shadow: 0 1px 10px rgba(140, 206, 209, 0.655);
 }
 
 .navBarContainer button:hover {

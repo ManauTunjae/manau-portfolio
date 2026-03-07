@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: flex-start; /* Texten är vänsterställd i din skiss */
   padding: 100px 10%; /* Ger luft runt om sektionen */
-  min-height: 80vh; /* Gör att sektionen tar upp det mesta av skärmen */
+  min-height: 100vh; /* Gör att sektionen tar upp det mesta av skärmen */
 }
 
 .headerName {
@@ -43,6 +43,7 @@
   cursor: pointer;
   transition: background 0.3s ease;
   border-radius: 9rem;
+  box-shadow: 0 2px 30px rgba(140, 206, 209, 0.762);
 }
 
 .readMoreBtn:hover {

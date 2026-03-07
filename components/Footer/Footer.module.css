@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center; /* Centrerar innehållet horisontellt */
   align-items: center;     /* Centrerar innehållet vertikalt */
-  background-color: #eeeae673; 
+  background-color: #5555574d; 
   
   /* Gör att den sitter längst ner */
   position: fixed; 
@@ -12,7 +12,7 @@
   
   height: 60px; /* Ge den en fast höjd för kontroll */
   z-index: 1000;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Skugga uppåt istället */
+  box-shadow: 0 2px 40px rgba(140, 206, 209, 0.655);
   border-radius: 1rem 1rem 0 0;
   padding: 0 20px;
 }

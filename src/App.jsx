@@ -1,3 +1,4 @@
+import About from '../components/About/About.jsx';
 import Footer from '../components/Footer/Footer.jsx';
 import Intro from '../components/Intro/Intro.jsx';
 import Navbar from '../components/Navbar/Navbar.jsx';
@@ -12,6 +13,7 @@ function App() {
         </header>
         <main>
           <Intro />
+          <About />
         </main>
         <footer>
           <Footer />

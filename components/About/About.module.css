@@ -1,0 +1,63 @@
+.aboutSection {
+  display: grid;
+  /* Här skapar vi de två kolumnerna - 1fr betyder "en del var" */
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 10%;
+  gap: 60px;
+  width: 100%;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.title {
+  font-size: 4rem; /* Stor och tydlig som i skissen */
+  margin: 0;
+  letter-spacing: 4px; /* Ger den där lyxiga "spaced" looken */
+  font-weight: 300;
+  color: #ffffff;
+} 
+
+.description {
+  max-width: 600px; /* Förhindrar att texten blir för bred och svårläst */
+  margin: 1rem 0 1.5rem 0;
+  line-height: 1.7;
+  font-size: 1.4rem;
+  color: #e0e0e0;
+}
+
+.imageContent {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.myProjectsBtn {
+  background-color: #3d362f; /* Mörkare brun/grå knapp */
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 9rem;
+  width: fit-content;
+  margin-top: 1rem;
+  box-shadow: 0 2px 30px rgba(140, 206, 209, 0.762);
+}
+
+.profileImage {
+  width: 100%;
+  max-width: 400px; /* Justera storleken så den matchar skissen */
+  border-radius: 40px; /* Dina snygga rundade hörn */
+  object-fit: cover;
+  box-shadow: 0 2px 50px rgba(140, 206, 209, 0.762);
+}
