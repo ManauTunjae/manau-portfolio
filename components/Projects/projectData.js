@@ -35,4 +35,13 @@ export const myProjects = [
     type: "Backend",
     image: "/images/image-rhythm.png"
   },
+  {
+  id: 5,
+  title: "Professional Portfolio",
+  description: "My personal developer portfolio built with React. Features dynamic project rendering, custom CSS modules for a 'code-editor' aesthetic, and a fully responsive layout.",
+  tags: ["React", "Vite", "JavaScript", "CSS3"],
+  github: "https://github.com/ManauTunjae/manau-portfolio", // Din länk
+  live: "https://manau-portfolio.netlify.app", // Din live-länk
+  image: "/images/image-portfolio.png" 
+}
 ];
