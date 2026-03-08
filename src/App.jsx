@@ -1,4 +1,5 @@
 import About from "../components/About/About.jsx";
+import Contact from "../components/Contact/Contact.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import Intro from "../components/Intro/Intro.jsx";
 import Navbar from "../components/Navbar/Navbar.jsx";
@@ -18,6 +19,7 @@ function App() {
           <About />
           <TechStack />
           <Projects />
+          <Contact />
         </main>
         <footer>
           <Footer />
