@@ -1,0 +1,112 @@
+.techContainer {
+  padding: 80px 0;
+  background-color: transparent;
+  width: 100%;
+  overflow: hidden; /* Döljer ikonerna när de åker utanför skärmen */
+  position: relative;
+}
+
+.codeTitle {
+  font-family: 'Fira Code', 'Courier New', monospace; 
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.syntaxParen {
+  color: #ffd700; 
+}
+
+.syntaxParam {
+  color: #9cdcfe; 
+}
+
+.syntaxArrow {
+  color: #569cd6; 
+}
+
+.syntaxBracket {
+  color: #da70d6; 
+}
+
+.syntaxString {
+  color: #ce9178; 
+}
+
+.codeTitle {
+  text-shadow: 0 0 15px rgba(156, 220, 254, 0.2);
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  /* Detta skapar den snygga toningen på sidorna */
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 50%,
+    black 50%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 50%,
+    black 50%,
+    transparent
+  );
+}
+
+/* Denna container rör sig åt vänster */
+.slideTrack {
+  display: flex;
+  /* Beräkna bredden: Antal unika ikoner (8) * 2 (för loopen) * ikon-bredd (200px) */
+  width: calc(200px * 16); 
+  animation: scroll 30s linear infinite; /* Justera 30s för snabbare/långsammare fart */
+}
+
+.slide {
+  width: 200px; /* Varje ikon-box tar upp 200px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.iconWrapper {
+  font-size: 3.5rem; /* Storleken på ikonerna */
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.slide span {
+  font-size: 1rem;
+  color: #e5ead3;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* Hover-effekt: Pausa och förstora ikonen */
+.slideTrack:hover {
+  animation-play-state: paused;
+}
+
+.slide:hover .iconWrapper {
+  transform: scale(1.2);
+}
+
+/* SJÄLVA ANIMATIONEN */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Flytta hälften av den totala bredden (8 ikoner * 200px = 1600px) */
+    transform: translateX(calc(-200px * 8)); 
+  }
+}
