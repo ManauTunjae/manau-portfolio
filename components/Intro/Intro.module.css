@@ -45,6 +45,11 @@
   box-shadow: 0 2px 30px rgba(140, 206, 209, 0.762);
 }
 
+.iconsTitle {
+  color: white;
+  font-size: 2rem;
+}
+
 .iconsContent {
   display: grid;
   grid-template-columns: repeat(2, auto);

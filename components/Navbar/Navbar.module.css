@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #5555574d;
+  background-color: #000000;
   position: fixed;
   top: 0;
   width: 100%;
@@ -41,7 +41,7 @@
   cursor: pointer;
   border-radius: 9rem;
   transition: opacity 0.3s ease;
-  box-shadow: 0 1px 10px rgba(140, 206, 209, 0.655);
+  box-shadow: 0 1px 10px rgba(127, 229, 235, 0.655);
 }
 
 .navBarContainer button:hover {

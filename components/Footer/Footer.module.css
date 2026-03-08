@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #5555574d;
-  position: fixed;
+  background-color: #000000;
+  position: end;
   bottom: 0;
   left: 0;
   right: 0;
