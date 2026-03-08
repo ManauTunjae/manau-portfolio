@@ -1,49 +1,52 @@
 .techContainer {
-  padding: 80px 0;
-  background-color: transparent;
+  padding: 100px 0;
   width: 100%;
-  overflow: hidden; /* Döljer ikonerna när de åker utanför skärmen */
+  overflow: hidden;
   position: relative;
 }
 
 .codeTitle {
-  font-family: 'Fira Code', 'Courier New', monospace; 
-  font-size: 2.5rem;
+  font-family: "Fira Code", "Courier New", monospace;
+  font-size: 2rem;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   font-weight: 500;
+  text-shadow: 0 0 15px rgba(156, 220, 254, 0.1); /* Diskret glöd */
 }
 
+/* --- SYNTAX FÄRGER (VS Code style) --- */
 .syntaxParen {
-  color: #ffd700; 
-}
-
+  color: #ffd700;
+} /* Guld ( ) */
 .syntaxParam {
-  color: #9cdcfe; 
-}
-
+  color: #9cdcfe;
+} /* Ljusblå (Tech/Tools) */
 .syntaxArrow {
-  color: #569cd6; 
-}
-
+  color: #569cd6;
+} /* Blå => */
 .syntaxBracket {
-  color: #da70d6; 
-}
-
+  color: #da70d6;
+} /* Rosa { } */
 .syntaxString {
-  color: #ce9178; 
+  color: #ce9178;
+} /* Terrakotta `Text` */
+
+/* --- Rad 1: Statiska ikoner --- */
+.staticTechGrid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 80px; /* Rejält avstånd till den rörliga raden */
 }
 
-.codeTitle {
-  text-shadow: 0 0 15px rgba(156, 220, 254, 0.2);
-}
-
+/* --- Rad 2: Slider med verktyg --- */
 .slider {
   width: 100%;
   overflow: hidden;
   position: relative;
   display: flex;
-  /* Detta skapar den snygga toningen på sidorna */
+
   mask-image: linear-gradient(
     to right,
     transparent,
@@ -60,53 +63,47 @@
   );
 }
 
-/* Denna container rör sig åt vänster */
-.slideTrack {
+.slideTrackRight {
   display: flex;
-  /* Beräkna bredden: Antal unika ikoner (8) * 2 (för loopen) * ikon-bredd (200px) */
-  width: calc(200px * 16); 
-  animation: scroll 30s linear infinite; /* Justera 30s för snabbare/långsammare fart */
+  /* 5 unika ikoner * 2 för loop * 180px bredd = 1800px */
+  width: calc(180px * 16);
+  animation: scrollRight 20s linear infinite;
 }
 
 .slide {
-  width: 200px; /* Varje ikon-box tar upp 200px */
+  width: 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 12px;
+  flex-shrink: 0;
 }
 
 .iconWrapper {
-  font-size: 3.5rem; /* Storleken på ikonerna */
+  font-size: 3rem;
   transition: transform 0.3s ease;
   display: flex;
   align-items: center;
 }
 
 .slide span {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #e5ead3;
   font-weight: 300;
   letter-spacing: 1px;
-}
-
-/* Hover-effekt: Pausa och förstora ikonen */
-.slideTrack:hover {
-  animation-play-state: paused;
+  opacity: 0.8;
 }
 
 .slide:hover .iconWrapper {
-  transform: scale(1.2);
+  transform: scale(0.9);
 }
 
-/* SJÄLVA ANIMATIONEN */
-@keyframes scroll {
+@keyframes scrollRight {
   0% {
-    transform: translateX(0);
+    transform: translateX(calc(-180px * 4));
   }
   100% {
-    /* Flytta hälften av den totala bredden (8 ikoner * 200px = 1600px) */
-    transform: translateX(calc(-200px * 8)); 
+    transform: translateX(0);
   }
 }

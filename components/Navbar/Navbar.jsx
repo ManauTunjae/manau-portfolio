@@ -6,6 +6,7 @@ function Navbar() {
         <p className={styles.navBarName}>Manau Tunjae portfolio</p>
         <div className={styles.navBarContainer}>
             <button>GET TO KNOW ME</button>
+            <button>STACK</button>
             <button>MY PROJECTS</button>
             <button>GET IN TOUCH</button>
         </div>
