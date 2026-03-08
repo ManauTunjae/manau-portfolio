@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #5555574d; 
+  background-color: #5555574d;
   position: fixed;
   top: 0;
   width: 100%;
@@ -18,21 +18,20 @@
   color: #ffffff;
 }
 
-/* Denna skapar det horisontella flödet för hela navbaren */
 :global(.portfolio-container) nav {
   display: flex;
-  justify-content: space-between; /* Skickar namnet till vänster och knappar till höger */
+  justify-content: space-between;
   align-items: center;
-  padding: 10px 5%; /* Ger rymd på sidorna och höjden */
+  padding: 10px 5%;
 }
 
 .navBarContainer {
   display: flex;
-  gap: 1rem; /* Skapar rymd mellan knapparna */
+  gap: 1rem;
 }
 
-.navButton{
-  background-color: #71d4ca69; /* Gråbruna färgen från skissen */
+.navButton {
+  background-color: #71d4ca69;
   color: rgb(198, 198, 198);
   border: none;
   padding: 0.5rem;

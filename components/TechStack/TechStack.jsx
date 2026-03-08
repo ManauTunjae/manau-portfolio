@@ -55,7 +55,7 @@ function TechStack() {
           <span className={styles.syntaxBracket}>&#125;</span>
         </h2>
 
-        {/* Rad 1: Språk (Åker åt vänster) */}
+        {/* Rad 1: Språk placera i central */}
         <div className={styles.staticTechGrid}>
           {languages.map((tech, index) => (
             <div key={index} className={styles.staticSlide}>
@@ -69,15 +69,15 @@ function TechStack() {
       </div>
 
       <div>
-      <h2 className={styles.codeTitle}>
-        <span className={styles.syntaxParen}>(</span>
-        <span className={styles.syntaxParam}> Tools </span>
-        <span className={styles.syntaxParen}>)</span>
-        <span className={styles.syntaxArrow}> =&gt; </span>
-        <span className={styles.syntaxBracket}>&#123;</span>
-        <span className={styles.syntaxString}> `I'm learning && using` </span>
-        <span className={styles.syntaxBracket}>&#125;</span>
-      </h2>
+        <h2 className={styles.codeTitle}>
+          <span className={styles.syntaxParen}>(</span>
+          <span className={styles.syntaxParam}> Tools </span>
+          <span className={styles.syntaxParen}>)</span>
+          <span className={styles.syntaxArrow}> =&gt; </span>
+          <span className={styles.syntaxBracket}>&#123;</span>
+          <span className={styles.syntaxString}> `I'm learning && using` </span>
+          <span className={styles.syntaxBracket}>&#125;</span>
+        </h2>
         {/* Rad 2: Verktyg (Åker åt höger) */}
         <div className={styles.slider}>
           <div className={styles.slideTrackRight}>
@@ -98,5 +98,4 @@ function TechStack() {
     </section>
   );
 }
-
 export default TechStack;

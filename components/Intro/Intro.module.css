@@ -1,9 +1,6 @@
-/* Intro.module.css */
-
 .intro {
   display: grid;
-  /* Här skapar vi de två kolumnerna - 1fr betyder "en del var" */
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   align-items: center;
   min-height: 100vh;
@@ -12,9 +9,9 @@
 }
 
 .headerName {
-  font-size: 6rem; /* Stor och tydlig som i skissen */
+  font-size: 6rem;
   margin: 0;
-  letter-spacing: 4px; /* Ger den där lyxiga "spaced" looken */
+  letter-spacing: 4px;
   font-weight: 300;
   color: #ffffff;
 }
@@ -23,11 +20,11 @@
   font-size: 2rem;
   margin-top: 0.5rem;
   font-weight: 400;
-  color: #d4c7b0; /* En guld/beige accentfärg som matchar din design */
+  color: #d4c7b0;
 }
 
 .introPara {
-  max-width: 600px; /* Förhindrar att texten blir för bred och svårläst */
+  max-width: 600px;
   margin: 1rem 0 1.5rem 0;
   line-height: 1.6;
   font-size: 1.7rem;
@@ -35,7 +32,7 @@
 }
 
 .readMoreBtn {
-  background-color: #3d362f; /* Mörkare brun/grå knapp */
+  background-color: #3d362f;
   color: white;
   border: none;
   padding: 12px 30px;
@@ -50,9 +47,9 @@
 
 .iconsContent {
   display: grid;
-  grid-template-columns: repeat(2, auto); 
+  grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
-  justify-content: center; 
+  justify-content: center;
   align-content: center;
   gap: 6rem;
   padding: 5rem;
@@ -60,32 +57,41 @@
 }
 
 .faInstagram {
-  /* Skapar bakgrunden */
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  border-radius: 1.5rem; 
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  border-radius: 1.5rem;
   color: white;
-  padding: 5px; 
+  padding: 5px;
 }
 
 .faLinkedIn {
-  color: #0077B5;
+  color: #0077b5;
 }
 
-.faGithub, .faThreads {
-  color: #ffffff; 
+.faGithub,
+.faThreads {
+  color: #ffffff;
 }
 
 .iconsContent a {
-  text-decoration: none; /* Tar bort eventuella understreck */
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
 }
 
 .iconsContent a:hover {
-  transform: translateY(-10px); /* Lyfter ikonen lite när man pekar på den */
+  transform: translateY(-10px);
   filter: drop-shadow(0 0 15px rgba(166, 93, 231, 0.969));
-  opacity: 0.4; 
-} 
+  opacity: 0.4;
+}
 
 .readMoreBtn:hover {
-  background-color: #524a41; /* Ljusnar upp lite vid hover */
+  background-color: #524a41;
 }
