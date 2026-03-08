@@ -28,15 +28,16 @@
 
 .navBarContainer {
   display: flex;
-  gap: 20px; /* Skapar rymd mellan knapparna */
+  gap: 1rem; /* Skapar rymd mellan knapparna */
 }
 
-.navBarContainer button {
-  background-color: #3d362f; /* Gråbruna färgen från skissen */
-  color: rgb(187, 182, 182);
+.navButton{
+  background-color: #71d4ca69; /* Gråbruna färgen från skissen */
+  color: rgb(198, 198, 198);
   border: none;
-  padding: 0.8rem;
-  font-size: 0.9rem;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 550;
   letter-spacing: 1px;
   cursor: pointer;
   border-radius: 9rem;

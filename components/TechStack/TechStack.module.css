@@ -1,6 +1,11 @@
 .techContainer {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
   padding: 100px 0;
   width: 100%;
+  min-height: 100vh;
   overflow: hidden;
   position: relative;
 }
@@ -42,7 +47,8 @@
 
 /* --- Rad 2: Slider med verktyg --- */
 .slider {
-  width: 100%;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
   overflow: hidden;
   position: relative;
   display: flex;
@@ -50,15 +56,15 @@
   mask-image: linear-gradient(
     to right,
     transparent,
-    black 50%,
-    black 50%,
+    black 15%, 
+    black 85%,
     transparent
   );
   -webkit-mask-image: linear-gradient(
     to right,
     transparent,
-    black 50%,
-    black 50%,
+    black 15%, 
+    black 85%,
     transparent
   );
 }
@@ -66,8 +72,8 @@
 .slideTrackRight {
   display: flex;
   /* 5 unika ikoner * 2 för loop * 180px bredd = 1800px */
-  width: calc(180px * 16);
-  animation: scrollRight 20s linear infinite;
+  width: calc(180px * 18);
+  animation: scrollRight 30s linear infinite;
 }
 
 .slide {
@@ -101,7 +107,7 @@
 
 @keyframes scrollRight {
   0% {
-    transform: translateX(calc(-180px * 4));
+    transform: translateX(calc(-180px * 9));
   }
   100% {
     transform: translateX(0);
