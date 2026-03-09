@@ -1,16 +1,27 @@
-# React + Vite
+# My Professional Portfolio 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website! This project showcases my journey as a developer, featuring my projects, technical skills, and a way to get in touch.
 
-Currently, two official plugins are available:
+## 🛠️ Built With
+* **React.js** - Frontend framework
+* **CSS Modules** - For scoped and maintainable styling
+* **Vite** - Next-generation frontend tooling
+* **React Icons** - For professional iconography
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
+* **Code-Editor Aesthetic**: A unique design inspired by development environments.
+* **Project Showcase**: Dynamic rendering of my latest work.
+* **Responsive Layout**: Designed for a seamless web experience (Mobile version under development).
+* **Deployment**: Automatically deployed via Netlify.
 
-## React Compiler
+## 🚀 Live Demo
+Check out the live site here: [https://manau-portfolio.netlify.app/](https://manau-portfolio.netlify.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🤖 AI Collaboration
+This project was developed with the support of **Gemini**, which served as a technical co-pilot for debugging, architectural discussions, and UI refinements.
 
-## Expanding the ESLint configuration
+![Project Preview](public/images/image-rhythm.jpg)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📈 Future Updates
+- [ ] Mobile-responsive design (Media Queries)
+- [ ] Integration with my Rhythm API (MongoDB/Node.js)
