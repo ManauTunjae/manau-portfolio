@@ -20,7 +20,7 @@ Check out the live site here: [https://manau-portfolio.netlify.app/](https://man
 ## 🤖 AI Collaboration
 This project was developed with the support of **Gemini**, which served as a technical co-pilot for debugging, architectural discussions, and UI refinements.
 
-![Project Preview](public/images/image-rhythm.jpg)
+![Project Preview](./public/images/image-rhythm.png)
 
 ## 📈 Future Updates
 - [ ] Mobile-responsive design (Media Queries)
