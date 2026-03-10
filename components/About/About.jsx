@@ -1,5 +1,5 @@
 import styles from "./About.module.css";
-import { FaFilePdf } from 'react-icons/fa';
+import { FaFilePdf } from "react-icons/fa";
 import manauPhoto from "../../src/assets/manau-photo.jpeg";
 import { Link } from "react-scroll";
 
@@ -38,12 +38,13 @@ function About() {
           MY PROJECTS
         </Link>
         <a
-          href="./public/CV_Manau_Tunjae.pdf"
+          href="/CV_Manau_Tunjae.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.myProjectsBtn} // Samma klass = samma utseende! 🎨
         >
-          <FaFilePdf style={{ marginRight: '2rem' }} />VIEW CV
+          <FaFilePdf style={{ marginRight: "2rem" }} />
+          VIEW CV
         </a>
       </div>
     </section>
