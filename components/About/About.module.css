@@ -17,11 +17,24 @@
 }
 
 .title {
-  font-size: 4rem; 
-  margin: 0;
-  letter-spacing: 4px;
+  font-size: 3.5rem; 
   font-weight: 300;
-  color: #ffffff;
+  background: linear-gradient(90deg, #62e6e4 10%, #6a83e7 40%, #ff6ec4 70%, #fffde4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: radiance-glow 4s ease-in-out infinite alternate;
+}
+
+@keyframes radiance-glow {
+  0% {
+    filter: drop-shadow(0 0 8px #62e6e4) drop-shadow(0 0 15px #849bfa);
+  }
+  50% {
+    filter: drop-shadow(0 0 16px #ff6ec4) drop-shadow(0 0 24px #fffde4);
+  }
+  100% {
+    filter: drop-shadow(0 0 8px #62e6e4) drop-shadow(0 0 15px #849bfa);
+  }
 } 
 
 .description {
