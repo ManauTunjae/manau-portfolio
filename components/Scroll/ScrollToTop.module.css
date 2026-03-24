@@ -1,0 +1,73 @@
+.scrollWrapper {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hidden {
+  opacity: 0;
+  transform: scale(0.5) rotate(-45deg);
+  pointer-events: none;
+}
+
+.visible {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+.iconContainer {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #1e1e1e;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  /* Din gradient som border-effekt */
+  background-image:
+    linear-gradient(#1e1e1e, #1e1e1e),
+    linear-gradient(90deg, #62e6e4, #6a83e7, #ff6ec4);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.795);
+}
+
+.arrowIcon {
+  color: #62e6e4;
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.scrollLink:hover .arrowIcon {
+  transform: translateY(-3px);
+  color: #ff6ec4;
+}
+
+.scrollLink:hover .iconContainer {
+  box-shadow: 0 0 50px rgba(159, 73, 221, 0.832);
+}
+
+.pulseRing {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: 1px solid #62e6e4;
+  animation: ripple 2s infinite;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
