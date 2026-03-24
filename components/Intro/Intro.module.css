@@ -12,7 +12,7 @@
   font-size: 6rem;
   margin: 0;
   letter-spacing: 4px;
-  font-weight: 300;
+  font-weight: 600;
   color: #ffffff;
   background: linear-gradient(90deg, #62e6e4 10%, #6a83e7 40%, #ff6ec4 70%, #fffde4 100%);
   -webkit-background-clip: text;
@@ -41,7 +41,7 @@
 
 .introPara {
   max-width: 600px;
-  margin: 1rem 0 1.5rem 0;
+  margin: 1rem 0 3rem 0;
   line-height: 1.6;
   font-size: 1.7rem;
   color: #e0e0e0;
