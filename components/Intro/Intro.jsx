@@ -2,6 +2,7 @@ import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaThreads } from "react-icons/fa6";
 import { Link } from 'react-scroll';
 import styles from "./Intro.module.css";
+import imageintro from '../../public/images/Image-intro.jpg'
 
 function Intro() {
   return (
@@ -21,35 +22,8 @@ function Intro() {
           className={styles.readMoreBtn}
         >READ MORE</Link>
       </div>
-      <div className={styles.iconsContent}>
-        <a
-          href="https://instagram.com/manautunjae"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaInstagram className={styles.faInstagram} />
-        </a>
-        <a
-          href="https://linkedin.com/in/manau-tunjae-7125b730a"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaLinkedin className={styles.faLinkedIn} />
-        </a>
-        <a
-          href="https://github.com/ManauTunjae"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub className={styles.faGithub} />
-        </a>
-        <a
-          href="https://threads.net/@manautunjae"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaThreads className={styles.faThreads} />
-        </a>
+      <div className={styles.imageContent}>
+        <img src={imageintro} alt="intro-imgae" className={styles.introImage} />
       </div>
     </section>
   );
