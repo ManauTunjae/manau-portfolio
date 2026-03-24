@@ -21,31 +21,33 @@ function About() {
           curiosity for how things work under the hood. Whether I'm crafting
           responsive front-end interfaces or architecting robust back-end logic,
           I love the 'YESS!' moment when the code finally clicks.
-        </p>
-        <p className={styles.description}>
+          <br />
+          <br />
           As a developer, I value continuous learning and collaboration. I don’t
           just want to write code—I want to build meaningful experiences that
           make an impact. When I’m not debugging or exploring new frameworks,
           you’ll likely find me logging miles on a treadmill or savoring a
           coffee at a café in Stockholm.
         </p>
-        <Link
-          to="projects"
-          smooth={true}
-          duration={800}
-          className={styles.myProjectsBtn}
-        >
-          MY PROJECTS
-        </Link>
-        <a
-          href="/CV_Manau_Tunjae.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.myProjectsBtn} // Samma klass = samma utseende! 🎨
-        >
-          <FaFilePdf style={{ marginRight: "2rem" }} />
-          VIEW CV
-        </a>
+        <div classname={styles.buttonContainer}>
+          <Link
+            to="projects"
+            smooth={true}
+            duration={800}
+            className={styles.myProjectsBtn}
+          >
+            MY PROJECTS
+          </Link>
+          <a
+            href="/CV_Manau_Tunjae.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.myProjectsBtn} // Samma klass = samma utseende! 🎨
+          >
+            <FaFilePdf style={{ marginRight: "1rem" }} />
+            RESUME
+          </a>
+        </div>
       </div>
     </section>
   );
