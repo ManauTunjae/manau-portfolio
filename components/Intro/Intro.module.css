@@ -1,7 +1,6 @@
 .intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
   align-items: center;
   min-height: 100vh;
   padding: 0 10%;
@@ -32,7 +31,7 @@
     filter: drop-shadow(0 0 10px #ff6ec583) drop-shadow(0 0 20px #fffde4);
   }
   80% {
-    filter: drop-shadow( 0 5px #62e6e46b) drop-shadow(0 0 15px #849bfa);
+    filter: drop-shadow(0 5px #62e6e46b) drop-shadow(0 0 15px #849bfa);
   }
 }
 
@@ -65,7 +64,7 @@
   cursor: pointer;
   border-radius: 9rem;
   transition: opacity 0.3s ease;
-  box-shadow: 0 1.5px 8px rgba(222, 174, 213, 0.701); 
+  box-shadow: 0 1.5px 8px rgba(222, 174, 213, 0.701);
 }
 
 .readMoreBtn:hover {
@@ -95,5 +94,34 @@
   .readMoreBtn {
     padding: 1.2rem 2rem;
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 820px) {
+  .intro {
+    grid-template-columns: 1fr; /* Stapla bild och text */
+    grid-template-rows: 0.5fr 1fr;
+    padding: 10rem 5% 40px 5%;
+    text-align: center;
+    gap: 10px;
+  }
+  .intro > div:nth-child(1) {
+    order: 2; 
+  }
+  .headerName {
+    font-size: 3.5rem; 
+    line-height: 1.1;
+    margin: 1.5rem auto;
+  }
+  .introPara {
+    font-size: 1rem;
+    margin: 2rem auto;
+  }
+  .introImage {
+    max-width: 85%;
+  }
+  .readMoreBtn {
+    padding: 0.5rem;
+    font-size: 0.7rem;
   }
 }

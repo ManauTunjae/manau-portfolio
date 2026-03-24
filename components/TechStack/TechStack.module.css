@@ -150,3 +150,20 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .techContainer {
+    padding: 60px 0;
+  }
+  .codeTitle {
+    font-size: 1.3rem;
+    padding: 0 10px;
+  }
+  .staticTechGrid {
+    gap: 20px;
+  }
+  .slide {
+    width: 120px;
+  } /* Mindre slider-ikoner */
+}
+

@@ -1,6 +1,6 @@
 .aboutSection {
   display: grid;
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   align-items: center;
   min-height: 100vh;
@@ -17,9 +17,15 @@
 }
 
 .title {
-  font-size: 3.5rem; 
+  font-size: 3.5rem;
   font-weight: 300;
-  background: linear-gradient(90deg, #62e6e4 10%, #6a83e7 40%, #ff6ec4 70%, #fffde4 100%);
+  background: linear-gradient(
+    90deg,
+    #62e6e4 10%,
+    #6a83e7 40%,
+    #ff6ec4 70%,
+    #fffde4 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: radiance-glow 4s ease-in-out infinite alternate;
@@ -35,10 +41,10 @@
   100% {
     filter: drop-shadow(0 0 8px #62e6e4) drop-shadow(0 0 15px #849bfa);
   }
-} 
+}
 
 .description {
-  max-width: 600px; 
+  max-width: 600px;
   margin: 1rem 0 3rem 0;
   line-height: 1.7;
   font-size: 1.4rem;
@@ -50,7 +56,7 @@
 }
 
 .myProjectsBtn {
-  background-color: #000000; 
+  background-color: #000000;
   color: white;
   border: none;
   padding: 1rem;
@@ -64,13 +70,13 @@
   border-radius: 9rem;
   width: fit-content;
   margin-top: 1rem;
-  box-shadow: 0 1.5px 8px rgba(222, 174, 213, 0.701); 
+  box-shadow: 0 1.5px 8px rgba(222, 174, 213, 0.701);
 }
 
 .profileImage {
   width: 100%;
-  max-width: 400px; 
-  border-radius: 40px; 
+  max-width: 400px;
+  border-radius: 40px;
   object-fit: cover;
   box-shadow: 0 5px 40px rgba(222, 174, 213, 0.701);
 }
@@ -99,5 +105,47 @@
   .myProjectsBtn {
     font-size: 1.3rem;
     padding: 1.2rem 2rem;
+  }
+}
+
+@media (max-width: 820px) {
+  .aboutSection {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 60px 5%;
+    text-align: center;
+    gap: 30px;
+    min-height: auto;
+  }
+
+  .textContent {
+    align-items: center;
+  }
+
+  .imageContent {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    order: -1; 
+  }
+
+  .profileImage {
+    max-width: 280px; 
+    height: auto;
+    border-radius: 30px; 
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .myProjectsBtn {
+    margin: 0 auto; /* Centrerar knappen om den har fast bredd */
   }
 }
