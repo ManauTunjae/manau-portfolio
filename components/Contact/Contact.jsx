@@ -64,7 +64,7 @@ const Contact = () => {
       </div>
       <div className={styles.imageContact}>
         <img
-          src="/images/Image-contact.jpg"
+          src={imageContact}
           alt="Manau Tunjae"
           className={styles.contactImage}
         />
