@@ -6,11 +6,26 @@
 }
 
 .title {
-  font-family: "Fira Code", monospace;
-  font-size: 1.8rem;
-  margin-bottom: 40px;
   text-align: center;
+  font-size: 3.5rem; 
+  font-weight: 500;
+  background: linear-gradient(90deg, #62e6e4 10%, #6a83e7 40%, #ff6ec4 70%, #fffde4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: radiance-glow 4s ease-in-out infinite alternate;
 }
+
+@keyframes radiance-glow {
+  0% {
+    filter: drop-shadow(0 0 8px #62e6e4) drop-shadow(0 0 15px #849bfa);
+  }
+  50% {
+    filter: drop-shadow(0 0 16px #ff6ec4) drop-shadow(0 0 24px #fffde4);
+  }
+  100% {
+    filter: drop-shadow(0 0 8px #62e6e4) drop-shadow(0 0 15px #849bfa);
+  }
+} 
 
 .syntaxParen {
   color: #ffd700;
@@ -52,8 +67,8 @@
 
 .card:hover {
   transform: translateY(-10px);
-  border: 1px solid rgba(156, 220, 254, 0.4);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 42, 255, 0.802);
+  box-shadow: 0 5px 60px rgba(129, 3, 171, 0.779);
 }
 
 .imageWrapper {
@@ -132,4 +147,46 @@
 
 .links a:hover {
   color: white;
+}
+
+@media (min-width: 2100px) {
+  .projectsSection {
+    padding: 150px 10%;
+  }
+
+  .title {
+    font-size: 5rem;
+    font-weight: 500;
+    margin-bottom: 60px;
+  }
+
+  .grid {
+    max-width: 1800px;
+    gap: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  }
+
+  .card {
+    padding: 40px;
+  }
+
+  .imageWrapper {
+    height: 300px;
+  }
+
+  .projectTitle {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+  }
+
+  .tags {
+    font-size: 2.2rem;
+  }
+
+  .links a {
+    font-size: 1.2rem;
+  }
 }

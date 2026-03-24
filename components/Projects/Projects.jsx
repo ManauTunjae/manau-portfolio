@@ -36,13 +36,8 @@ function Projects() {
   return (
     <section className={styles.projectsSection} id="projects">
       <h2 className={styles.title}>
-        <span className={styles.syntaxParen}>(</span>
-        <span className={styles.syntaxParam}> My School Projects </span>
-        <span className={styles.syntaxParen}>)</span>
-        <span className={styles.syntaxArrow}> =&gt; </span>
-        <span className={styles.syntaxBracket}>&#123;</span>
+        My Works
       </h2>
-
       <div className={styles.grid}>
         {myProjects.map((project) => (
           <div key={project.id} className={styles.card}>
@@ -78,9 +73,6 @@ function Projects() {
           </div>
         ))}
       </div>
-      <h2 className={styles.title}>
-        <span className={styles.syntaxBracket}>&#125;</span>
-      </h2>
     </section>
   );
 }

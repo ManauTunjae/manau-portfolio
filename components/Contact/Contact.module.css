@@ -15,12 +15,13 @@
   padding: 0 10%;
   gap: 60px;
   width: 100%;
+
 }
 
 .contactTitle, 
 .iconsTitle {
   font-size: 3rem;
-  margin: 0;
+  margin: ;
   letter-spacing: 4px;
   font-weight: 300;
   color: #ffffff;
@@ -123,4 +124,29 @@
   border-radius: 40px;
   object-fit: cover;
   box-shadow: 0 2px 50px rgba(140, 206, 209, 0.762);
+}
+
+@media (min-width: 2100px) {
+  .contactSection {
+    padding: 0 15%;
+    gap: 80px;
+  }
+
+  .contactTitle,
+  .iconsTitle {
+    font-size: 4.5rem;
+  }
+
+  .contact {
+    font-size: 2.5rem;
+  }
+
+  .iconsContent {
+    font-size: 5.5rem;
+    gap: 4rem;
+  }
+
+  .contactImage {
+    max-width: 550px;
+  }
 }
