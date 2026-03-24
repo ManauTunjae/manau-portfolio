@@ -146,6 +146,7 @@
   }
 
   .myProjectsBtn {
-    margin: 0 auto; /* Centrerar knappen om den har fast bredd */
+    font-size: 0.6rem;
+    padding: 0.8rem;
   }
 }
