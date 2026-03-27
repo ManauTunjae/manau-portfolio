@@ -29,7 +29,7 @@ function About() {
           you’ll likely find me logging miles on a treadmill or savoring a
           coffee at a café in Stockholm.
         </p>
-        <div classname={styles.buttonContainer}>
+        <div className={styles.buttonContainer}>
           <Link
             to="projects"
             smooth={true}
