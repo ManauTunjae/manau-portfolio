@@ -9,6 +9,7 @@
   text-align: center;
   font-size: 3.5rem; 
   font-weight: 500;
+  margin-bottom: 30px;
   background: linear-gradient(90deg, #62e6e4 10%, #6a83e7 40%, #ff6ec4 70%, #fffde4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -188,5 +189,13 @@
 
   .links a {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 820px) {
+  .title {
+    font-size: 3rem;
+    font-weight: 200;
+    margin-bottom: 5px;
   }
 }
