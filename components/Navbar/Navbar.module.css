@@ -1,3 +1,4 @@
+/* --- Grundstruktur (Gäller både mobil och webb) --- */
 .navWrapper {
   display: flex;
   justify-content: space-between;
@@ -6,7 +7,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 1rem 5%; /* Ger luft till vänster och höger */
+  padding: 1rem 5%;
   z-index: 1000;
   box-shadow: 0 2px 20px rgba(119, 7, 98, 0.701);
   border-radius: 0 0 1rem 1rem;
@@ -16,31 +17,44 @@
   font-size: 1.2rem;
   font-weight: 500;
   color: #ffffff;
-  /* Din snygga gradient-kod behålls här */
   background: linear-gradient(90deg, #62e6e4 10%, #6a83e7 40%, #ff6ec4 70%, #fffde4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: radiance-glow 4s ease-in-out infinite alternate;
 }
 
-/* Desktop-styling */
+@keyframes radiance-glow {
+  0% { filter: drop-shadow(0 0 8px #62e6e4) drop-shadow(0 0 15px #849bfa); }
+  50% { filter: drop-shadow(0 0 16px #ff6ec4) drop-shadow(0 0 24px #fffde4); }
+  100% { filter: drop-shadow(0 0 8px #62e6e4) drop-shadow(0 0 15px #849bfa); }
+}
+
+/* --- Desktop-styling (Webbversion) --- */
 .navBarContainer {
   display: flex;
   gap: 1.5rem;
 }
 
-/* Vi ändrar navButton till en renare länk-stil för desktop också */
 .navLink {
+  background-color: #000000; /* Ger tillbaka knapp-känslan */
   color: rgb(198, 198, 198);
-  font-size: 0.85rem;
-  font-weight: 500;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  font-size: 0.8rem;
+  font-weight: 550;
+  letter-spacing: 1px;
   cursor: pointer;
-  transition: color 0.3s ease;
+  border-radius: 9rem;
+  transition: all 0.3s ease;
+  box-shadow: 1px 1px 4px rgba(169, 51, 147, 0.818);
   text-decoration: none;
+  display: inline-block;
 }
 
 .navLink:hover {
-  color: #ff6ec4;
+  opacity: 0.8;
+  color: #ff6ec4; /* Matchar din rosa glow */
+  box-shadow: 0 0 10px rgba(255, 110, 196, 0.5);
 }
 
 .menuIcon {
@@ -49,7 +63,7 @@
   cursor: pointer;
 }
 
-/* Mobilanpassning */
+/* --- Mobilanpassning (Under 820px) --- */
 @media (max-width: 820px) {
   .menuIcon {
     display: block;
@@ -57,28 +71,37 @@
   }
 
   .navBarContainer {
-    display: none; /* Dold som standard */
+    display: none;
     flex-direction: column;
     position: absolute;
-    top: 100%; /* Hamnar direkt under nav-baren */
+    top: 100%;
     right: 0;
-    background-color: rgba(19, 0, 22, 0.908);
-    width: 100%; /* Tar upp lite mer än halva skärmen */
+    background-color: rgba(19, 0, 22, 0.95);
+    width: 100%;
     padding: 2rem;
     border-radius: 0 0 0 1.5rem;
-    align-items: flex-end; /* PLACERAR TEXTEN MOT HÖGER */
+    align-items: flex-end; /* Placerar texten mot höger */
     box-shadow: -5px 5px 15px rgba(119, 7, 98, 0.3);
   }
 
   .navBarContainer.active {
-    display: flex; /* Visas när man klickar på ikonen */
+    display: flex;
   }
 
   .navLink {
-    font-size: 1rem;
+    /* Nollställ knapp-stylingen för mobilmenyn */
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
     padding: 0.8rem 0;
     width: 100%;
-    text-align: right; /* Texten mot höger */
+    text-align: right;
+    font-size: 1.1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .navLink:hover {
+    box-shadow: none;
+    transform: none;
   }
 }
