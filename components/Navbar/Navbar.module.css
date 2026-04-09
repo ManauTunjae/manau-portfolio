@@ -6,135 +6,79 @@
   position: fixed;
   top: 0;
   width: 100%;
+  padding: 1rem 5%; /* Ger luft till vänster och höger */
   z-index: 1000;
   box-shadow: 0 2px 20px rgba(119, 7, 98, 0.701);
   border-radius: 0 0 1rem 1rem;
 }
 
 .navBarName {
-  font-size: 1rem;
-  font-weight: 300;
-  letter-spacing: 1px;
+  font-size: 1.2rem;
+  font-weight: 500;
   color: #ffffff;
-  background: linear-gradient(
-    90deg,
-    #62e6e4 10%,
-    #6a83e7 40%,
-    #ff6ec4 70%,
-    #fffde4 100%
-  );
+  /* Din snygga gradient-kod behålls här */
+  background: linear-gradient(90deg, #62e6e4 10%, #6a83e7 40%, #ff6ec4 70%, #fffde4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: radiance-glow 4s ease-in-out infinite alternate;
 }
 
-@keyframes radiance-glow {
-  0% {
-    filter: drop-shadow(0 0 8px #62e6e4) drop-shadow(0 0 15px #849bfa);
-  }
-  50% {
-    filter: drop-shadow(0 0 16px #ff6ec4) drop-shadow(0 0 24px #fffde4);
-  }
-  100% {
-    filter: drop-shadow(0 0 8px #62e6e4) drop-shadow(0 0 15px #849bfa);
-  }
-}
-
-:global(.portfolio-container) nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 5%;
-}
-
+/* Desktop-styling */
 .navBarContainer {
   display: flex;
-  gap: 1rem;
-  
-
+  gap: 1.5rem;
 }
 
-.navButton {
-  background-color: #000000;
+/* Vi ändrar navButton till en renare länk-stil för desktop också */
+.navLink {
   color: rgb(198, 198, 198);
-  border: none;
-  padding: 0.7rem;
-  font-size: 0.8rem;
-  font-weight: 550;
-  letter-spacing: 1px;
+  font-size: 0.85rem;
+  font-weight: 500;
   cursor: pointer;
-  border-radius: 9rem;
-  transition: opacity 0.3s ease;
-  box-shadow: 0 0.5px 3px rgba(222, 174, 213, 0.701);
+  transition: color 0.3s ease;
+  text-decoration: none;
 }
 
-.navBarContainer button:hover {
-  opacity: 0.8;
+.navLink:hover {
+  color: #ff6ec4;
 }
 
 .menuIcon {
   display: none;
+  color: white;
+  cursor: pointer;
 }
-/* Mobilanpassning för skärmar under 820px */
-@media (max-width: 820px) {
-  .navWrapper {
-    padding: 10px 0;
-    border-radius: 0 0 1.5rem 1.5rem;
-    min-height: 60px;
-  }
-  
-  .navBarContainer.active {
-    display: flex; 
-    flex-direction: column;
-    margin-top: 10px;
-      gap: 10px;
-      min-height: auto;
-  }
-  :global(.portfolio-container) nav {
-    flex-direction: column;
-    gap: 15px;
-    padding: 5px 10px;
-  }
 
-  .navBarName {
-    font-size: 1rem;
-    text-align: center;
-    line-height: 1.2;
-    margin-top: 5px;
-    margin-bottom: 5px;
+/* Mobilanpassning */
+@media (max-width: 820px) {
+  .menuIcon {
+    display: block;
+    z-index: 1001;
   }
 
   .navBarContainer {
-    display: none;
-  }
-
-  .navButton {
-    padding: 0.5rem 1rem;
-    font-size: 0.6rem;
-    min-width: 70px;
-    height: auto;
-    border-radius: 2rem;
-    text-align: center;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .menuIcon {
-    display: block;
-    color: #ffffff;
+    display: none; /* Dold som standard */
+    flex-direction: column;
     position: absolute;
-    top: 15px;
-    right: 20px;
-    cursor: pointer;
-  }
+    top: 100%; /* Hamnar direkt under nav-baren */
+    right: 0;
+    background-color: rgba(19, 0, 22, 0.908);
+    width: 100%; /* Tar upp lite mer än halva skärmen */
+    padding: 2rem;
+    border-radius: 0 0 0 1.5rem;
+    align-items: flex-end; /* PLACERAR TEXTEN MOT HÖGER */
+    box-shadow: -5px 5px 15px rgba(119, 7, 98, 0.3);
   }
 
-/* Extra fix för riktigt små mobiler (under 400px) */
-@media (max-width: 400px) {
-  .navButton {
-    font-size: 0.5rem;
-    padding: 0.4rem 0.6rem;
-    min-width: 60px;
+  .navBarContainer.active {
+    display: flex; /* Visas när man klickar på ikonen */
+  }
+
+  .navLink {
+    font-size: 1rem;
+    padding: 0.8rem 0;
+    width: 100%;
+    text-align: right; /* Texten mot höger */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 }
