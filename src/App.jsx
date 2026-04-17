@@ -7,6 +7,7 @@ import Projects from "./components/Projects/Projects.jsx";
 import ScrollToTop from "./components/Scroll/ScrollToTop.jsx";
 import TechStack from "./components/TechStack/TechStack.jsx";
 import "./App.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 function App() {
   return (
