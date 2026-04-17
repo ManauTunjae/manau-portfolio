@@ -1,8 +1,7 @@
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaThreads } from "react-icons/fa6";
-import { Link } from 'react-scroll';
+import { Link } from "react-scroll";
 import styles from "./Intro.module.css";
-import imageintro from '../../public/images/Image-intro.jpg'
 
 function Intro() {
   return (
@@ -20,10 +19,16 @@ function Intro() {
           smooth={true}
           duration={800}
           className={styles.readMoreBtn}
-        >READ MORE</Link>
+        >
+          READ MORE
+        </Link>
       </div>
       <div className={styles.imageContent}>
-        <img src={imageintro} alt="intro-imgae" className={styles.introImage} />
+        <img
+          src="/images/Image-intro.jpg"
+          alt="intro-imgae"
+          className={styles.introImage}
+        />
       </div>
     </section>
   );

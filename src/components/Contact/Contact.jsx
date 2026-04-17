@@ -7,7 +7,6 @@ import {
   FaPhoneAlt,
 } from "react-icons/fa";
 import { FaThreads } from "react-icons/fa6";
-import imageContact from "../../public/images/Image-contact.jpg";
 
 const Contact = () => {
   return (
@@ -64,7 +63,7 @@ const Contact = () => {
       </div>
       <div className={styles.imageContact}>
         <img
-          src={imageContact}
+          src="/images/Image-contact.jpg"
           alt="Manau Tunjae"
           className={styles.contactImage}
         />

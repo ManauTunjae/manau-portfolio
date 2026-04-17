@@ -1,11 +1,11 @@
-import About from "../components/About/About.jsx";
-import Contact from "../components/Contact/Contact.jsx";
-import Footer from "../components/Footer/Footer.jsx";
-import Intro from "../components/Intro/Intro.jsx";
-import Navbar from "../components/Navbar/Navbar.jsx";
-import Projects from "../components/Projects/Projects.jsx";
-import ScrollToTop from "../components/Scroll/ScrollToTop.jsx";
-import TechStack from "../components/TechStack/TechStack.jsx";
+import About from "./components/About/About.jsx";
+import Contact from "./components/Contact/Contact.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import Intro from "./components/Intro/Intro.jsx";
+import Navbar from "./components/Navbar/Navbar.jsx";
+import Projects from "./components/Projects/Projects.jsx";
+import ScrollToTop from "./components/Scroll/ScrollToTop.jsx";
+import TechStack from "./components/TechStack/TechStack.jsx";
 import "./App.css";
 
 function App() {

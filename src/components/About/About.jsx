@@ -1,6 +1,6 @@
 import styles from "./About.module.css";
 import { FaFilePdf } from "react-icons/fa";
-import manauPhoto from "../../src/assets/manau-photo.jpeg";
+import manauPhoto from "../../assets/manau-photo.jpeg";
 import { Link } from "react-scroll";
 
 function About() {
