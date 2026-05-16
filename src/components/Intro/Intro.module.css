@@ -12,13 +12,7 @@
   letter-spacing: 4px;
   font-weight: 600;
   margin-bottom: 3rem;
-  background: linear-gradient(
-    90deg,
-    #62e6e4bd 10%,
-    #6a83e7b2 40%,
-    #ff6ec59e 70%,
-    #fffde48a 100%
-  );
+  background: linear-gradient(90deg, #10b9b7 10%, #4860bd 40%, #d359a2 70%, #7bdd0b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: radiance-glow 10s ease-in-out infinite alternate;
@@ -39,7 +33,7 @@
 .statusName {
   font-size: 2rem;
   font-weight: 400;
-  color: #d4c7b0;
+  color:#000000;
 }
 
 .introPara {
@@ -47,7 +41,7 @@
   margin: 1rem 0 3rem 0;
   line-height: 1.6;
   font-size: 1.5rem;
-  color: #e0e0e0;
+  color: #505F76;
 }
 
 .introImage {
