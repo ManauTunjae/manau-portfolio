@@ -3,30 +3,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000000;
+  background-color: #BEC6E0;
   position: fixed;
   top: 0;
   width: 100%;
   padding: 1rem 5%;
   z-index: 1000;
-  box-shadow: 0 2px 20px rgba(119, 7, 98, 0.701);
+  box-shadow: 0 1px 20px #0072F0;
   border-radius: 0 0 1rem 1rem;
 }
 
 .navBarName {
   font-size: 1.2rem;
-  font-weight: 500;
-  color: #ffffff;
-  background: linear-gradient(90deg, #62e6e4 10%, #6a83e7 40%, #ff6ec4 70%, #fffde4 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: radiance-glow 4s ease-in-out infinite alternate;
-}
-
-@keyframes radiance-glow {
-  0% { filter: drop-shadow(0 0 8px #62e6e4) drop-shadow(0 0 15px #849bfa); }
-  50% { filter: drop-shadow(0 0 16px #ff6ec4) drop-shadow(0 0 24px #fffde4); }
-  100% { filter: drop-shadow(0 0 8px #62e6e4) drop-shadow(0 0 15px #849bfa); }
+  font-weight: 1000;
+  color: #131B2E;
 }
 
 /* --- Desktop-styling (Webbversion) --- */
@@ -36,8 +26,8 @@
 }
 
 .navLink {
-  background-color: #000000; /* Ger tillbaka knapp-känslan */
-  color: rgb(198, 198, 198);
+  background-color: #B7C8E1; 
+  color: #001A41;
   border: none;
   padding: 0.7rem 1.2rem;
   font-size: 0.8rem;
@@ -46,15 +36,15 @@
   cursor: pointer;
   border-radius: 9rem;
   transition: all 0.3s ease;
-  box-shadow: 1px 1px 4px rgba(169, 51, 147, 0.818);
+  box-shadow: 0 0.5px 5px #0072F0;
   text-decoration: none;
   display: inline-block;
 }
 
 .navLink:hover {
   opacity: 0.8;
-  color: #ff6ec4; /* Matchar din rosa glow */
-  box-shadow: 0 0 10px rgba(255, 110, 196, 0.5);
+  color: #0072F0; 
+  box-shadow:#0072F0;
 }
 
 .menuIcon {
@@ -76,12 +66,12 @@
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: rgba(19, 0, 22, 0.95);
+    background-color: #B7C8E1;
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 0 0 0 1.5rem;
     align-items: flex-end; /* Placerar texten mot höger */
-    box-shadow: -5px 5px 15px rgba(119, 7, 98, 0.3);
+    box-shadow: 1px 1px 15px #0072F0;
   }
 
   .navBarContainer.active {
@@ -96,8 +86,8 @@
     padding: 0.8rem 0;
     width: 100%;
     text-align: right;
-    font-size: 1.1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 1rem;
+    border-bottom: 1px solid #0070f063;
   }
 
   .navLink:hover {

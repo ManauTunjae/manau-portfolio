@@ -9,8 +9,8 @@ html, body {
   width: 100%;
   max-width: 100vw;
   overflow-x: hidden; /* Förhindrar sidscroll totalt */
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #EDF0FF;
+  color: #68788F;
 }
 
 .portfolio-container {
