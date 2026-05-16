@@ -46,7 +46,7 @@ export const myProjects = [
       "My personal developer portfolio built with React. Features dynamic project rendering, custom CSS modules for a 'code-editor' aesthetic, and a fully responsive layout.",
     tags: ["React", "Vite", "JavaScript", "CSS3"],
     github: "https://github.com/ManauTunjae/manau-portfolio", // Din länk
-    live: "https://manau-portfolio.netlify.app", // Din live-länk
+    live: "www.manautunjae.se", // Din live-länk
     image: "/images/image-portfolio.png",
   },
   {
@@ -57,6 +57,16 @@ export const myProjects = [
     tags: ["JavaScript", "HTML5", "CSS3"],
     github: "https://github.com/ManauTunjae/blog-platform",
     live: "https://easyblogg.netlify.app",
+    image: "/images/image-blog.png",
+  },
+  {
+    id: 7,
+    title: "HireFlow ATS-application Backend",
+    description:
+      "A dynamic blog platform featuring interactive posts. Demonstrates array data handling, dynamic DOM rendering, and a fully responsive layout.",
+    tags: ["JavaScript", "Node", "Express", "MongoDB"],
+    github: "https://github.com/ManauTunjae/hireflow-backend.git",
+    live: "https://hireflow-backend-ten.vercel.app/",
     image: "/images/image-blog.png",
   },
 ];

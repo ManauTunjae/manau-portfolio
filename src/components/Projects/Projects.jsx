@@ -17,6 +17,7 @@ import {
   SiMongodb,
   SiPostman,
   SiJson,
+  SiNodedotjs,
 } from "react-icons/si";
 
 const tagIcons = {
@@ -30,14 +31,13 @@ const tagIcons = {
   JSON: <SiJson style={{ color: "#ffffff" }} />,
   React: <FaReact style={{ color: "#61DAFB" }} />,
   Vite: <SiVite style={{ color: "#646CFF" }} />,
+  Node: <SiNodedotjs color="#3C873A" size={40} />,
 };
 
 function Projects() {
   return (
     <section className={styles.projectsSection} id="projects">
-      <h2 className={styles.title}>
-        My Works
-      </h2>
+      <h2 className={styles.title}>My Works</h2>
       <div className={styles.grid}>
         {myProjects.map((project) => (
           <div key={project.id} className={styles.card}>
