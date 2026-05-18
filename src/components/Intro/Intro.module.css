@@ -12,7 +12,13 @@
   letter-spacing: 4px;
   font-weight: 600;
   margin-bottom: 3rem;
-  background: linear-gradient(90deg, #10b9b7 10%, #4860bd 40%, #d359a2 70%, #7bdd0b 100%);
+  background: linear-gradient(
+    90deg,
+    #10b9b7 10%,
+    #4860bd 40%,
+    #d359a2 70%,
+    #7bdd0b 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: radiance-glow 10s ease-in-out infinite alternate;
@@ -33,7 +39,7 @@
 .statusName {
   font-size: 2rem;
   font-weight: 400;
-  color:#000000;
+  color: #000000;
 }
 
 .introPara {
@@ -41,7 +47,7 @@
   margin: 1rem 0 3rem 0;
   line-height: 1.6;
   font-size: 1.5rem;
-  color: #505F76;
+  color: #505f76;
 }
 
 .introImage {
@@ -57,7 +63,7 @@
   font-weight: 550;
   letter-spacing: 1px;
   cursor: pointer;
-  border-radius: 9rem;
+  border-radius: 1rem;
   transition: opacity 0.3s ease;
   box-shadow: 0 1.5px 8px rgba(222, 174, 213, 0.701);
 }
@@ -101,10 +107,10 @@
     gap: 10px;
   }
   .intro > div:nth-child(1) {
-    order: 2; 
+    order: 2;
   }
   .headerName {
-    font-size: 3.5rem; 
+    font-size: 3.5rem;
     line-height: 1.1;
     margin: 1.5rem auto;
   }
