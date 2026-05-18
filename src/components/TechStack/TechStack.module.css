@@ -1,175 +1,161 @@
 .techContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 140px 8%;
+  width: auto;
+  gap: 50px;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #38485d;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+/* --- GitHub Kalender --- */
+.githubSection {
+  width: 1000px;
+}
+
+.githubPlaceholder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  color: #000000;
+  border: 1px solid rgb(55, 147, 13);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(2, 61, 22, 0.635);
+}
+
+.matrixContainer {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* Skapar vänsterkolumn för texten och höger för ikonerna */
+  grid-template-rows: 1fr;
+  gap: 30px;
+  width: auto;
+  padding: 2rem;
+}
+
+.matrixRow {
+  border: 1px solid rgb(20, 235, 235);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 15px 15px rgba(40, 30, 232, 0.283);
+  padding: 3rem;
+  width: 360px;
+  background-color: #aea0a023;
+}
+
+.matrixHeader {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #38485d;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.9;
+  padding-bottom: 2rem;
+}
+
+.matrixGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
-  padding: 100px 5%;
+  gap: 20px;
   width: 100%;
-  max-height: 50vh;
-  margin-top: 2rem; 
-  overflow: hidden;
-  position: relative;
 }
 
-.codeTitle {
-  font-family: "Fira Code", monospace;
-  font-size: 1.8rem;
-  margin-bottom: 40px;
-  text-align: center;
-}
+/* --- Enskilda Ikon-kort --- */
+/* --- Uppdaterad TechStack.module.css --- */
 
-.syntaxParen {
-  color: #ffd700;
-} /* Guld ( ) */
-.syntaxParam {
-  color: #9cdcfe;
-} /* Ljusblå (Tech/Tools) */
-.syntaxArrow {
-  color: #569cd6;
-} /* Blå => */
-.syntaxBracket {
-  color: #da70d6;
-} /* Rosa { } */
-.syntaxString {
-  color: #ce9178;
-} /* Terrakotta `Text` */
-
-/* --- Rad 1: Statiska ikoner --- */
-.staticTechGrid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-bottom: 80px;
-}
-
-/* --- Rad 2: Slider med verktyg --- */
-.slider {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  overflow: hidden;
-  position: relative;
-  display: flex;
-
-  mask-image: linear-gradient(
-    to right,
-    transparent,
-    black 15%,
-    black 85%,
-    transparent
-  );
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent,
-    black 15%,
-    black 85%,
-    transparent
-  );
-}
-
-.slideTrackRight {
-  display: flex;
-  width: calc(180px * 18);
-  animation: scrollRight 30s linear infinite;
-}
-
-.slide {
-  width: 180px;
+.techCard {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  flex-shrink: 0;
+  text-align: center;
+  gap: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: transform 0.3s cubic-bezier(0.5, 1, 0.5, 1);
 }
 
-.iconWrapper {
-  font-size: 2.5rem;
-  transition: transform 0.3s ease;
+.iconBox {
+  font-size: 3rem;
+  /* ÄNDRING: Vi använder färgen direkt istället för dämpad vit! 🌈 */
+  color: var(--hover-color);
   display: flex;
   align-items: center;
+  justify-content: center;
+  /* En mjuk transition om texten ändrar färg vid hovring */
+  transition: filter 0.3s ease;
+  padding: 1rem;
+  border-radius: 2rem;
+  box-shadow:
+    0 4px 15px rgba(1, 18, 38, 0.543),
+    inset 0 1px 1px rgba(255, 255, 255, 0.2);
 }
 
-.slide span {
-  font-size: 0.9rem;
-  color: #e5ead3;
-  font-weight: 300;
-  letter-spacing: 1px;
-  opacity: 0.8;
+.techName {
+  font-size: 0.85rem;
+  /* Vi behåller texten lite dämpad som standard för en proffsig känsla */
+  color: rgba(36, 32, 32, 0.883);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+  white-space: nowrap;
 }
 
-.slide:hover .iconWrapper {
-  transform: scale(0.9);
+/* --- HOVER EFFEKT: En subtil glow som förstärker färgen! 💎 --- */
+.techCard:hover {
+  transform: scale(1.12); /* Puffar upp ikonen mjukt som innan */
 }
 
-@keyframes scrollRight {
-  0% {
-    transform: translateX(calc(-180px * 9));
-  }
-  100% {
-    transform: translateX(0);
-  }
+.techCard:hover .iconBox {
+  /* Istället för att byta färg, lägger vi till ett lyxigt glow bakom ikonen */
+  filter: drop-shadow(0 0 30px var(--hover-color));
 }
 
-@media (min-width: 2100px) {
-  .techContainer {
-    padding: 150px 0;
-  }
-
-  .codeTitle {
-    font-size: 2.5rem;
-    margin-bottom: 60px;
-  }
-
-  .staticTechGrid {
-    gap: 60px;
-    margin-bottom: 100px;
-  }
-
-  .slide {
-    width: 240px;
-  }
-
-  .slideTrackRight {
-    width: calc(240px * 18);
-  }
-
-  .iconWrapper {
-    font-size: 4.5rem;
-  }
-
-  .slide span {
-    font-size: 1.2rem;
-  }
-
-  @keyframes scrollRight {
-    0% {
-      transform: translateX(calc(-240px * 9));
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
+.techCard:hover .techName {
+  color: #000000; /* Texten blir kritvit vid hovring för extra tydlighet */
 }
 
-@media (max-width: 768px) {
-  .techContainer {
-    padding: 70px 0;
+/* --- Mobilanpassning --- */
+@media (max-width: 1024px) {
+  .matrixContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
   }
-  .codeTitle {
-    font-size: 1.3rem;
-    padding: 0 10px;
-  }
-  .iconWrapper {
-    font-size: 2.5rem;
-    font-weight: 300;
-    padding: 0% 10px;
-  }
-  .staticTechGrid {
+
+  .githubSection {
+  width: auto;
+}
+
+  .matrixRow {
+    grid-template-columns: 1fr; 
     gap: 20px;
+    padding-bottom: 40px;
   }
-  .slide {
-    width: 120px;
-  } /* Mindre slider-ikoner */
-}
 
+  .matrixHeader {
+    font-size: 1.2rem;
+    border-left: 3px solid #62e6e4;
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .matrixGrid {
+    gap: 25px;
+    justify-content: flex-start;
+  }
+
+  .iconBox {
+    font-size: 2.8rem;
+  }
+}
