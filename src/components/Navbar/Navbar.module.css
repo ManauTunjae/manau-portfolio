@@ -27,10 +27,9 @@
   transition: all 0.3s ease;
 }
 
-.navBarName {
-  font-size: 1.2rem;
-  font-weight: 1000;
-  color: #131b2e;
+.logoImage {
+  width: 2.5rem;
+  margin-right: 1rem;
 }
 
 /* --- Desktop-styling (Webbversion) --- */
@@ -73,7 +72,7 @@
 }
 
 .menuIcon {
-  display: none;
+  display: flex;
   color: white;
   cursor: pointer;
 }
@@ -109,7 +108,7 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 70px; /* Placeras precis under den svävande navbaren */
+    top: 90px; /* Placeras precis under den svävande navbaren */
     right: 0;
 
     /* En mjuk glaskänsla även för mobilmenyn som matchar temat 🍏✨ */
@@ -157,8 +156,8 @@
 /* Extra fix för riktigt små mobilskärmar så glaset inte blir för stort */
 @media (max-width: 480px) {
   .navWrapper {
-    width: 95%;
-    padding: 0.5rem 1rem;
+    width: 90%;
+    padding: 1rem;
   }
 
   .navBarName {
