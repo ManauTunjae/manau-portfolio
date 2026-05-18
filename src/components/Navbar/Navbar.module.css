@@ -10,7 +10,8 @@
   transform: translateX(-50%);
 
   max-width: 1000px;
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
   z-index: 1000;
   box-shadow:
     0 4px 30px rgba(0, 0, 0, 0.4),
@@ -49,8 +50,8 @@
     0.1
   ); 
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 0.6rem 1.2rem;
-  font-size: 0.75rem;
+  padding: 0.4rem;
+  font-size: 0.8rem;
   font-weight: 550;
   letter-spacing: 1.5px;
   cursor: pointer;
@@ -83,45 +84,90 @@
   cursor: pointer;
 }
 
-/* --- Mobilanpassning (Under 820px) --- */
-@media (max-width: 920px) {
+@media (max-width: 1400px) {
+ .navLink {
+  padding: 0.3rem;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+ }
+}
+
+/* --- Mobilanpassning (Under 1024px) --- */
+@media (max-width: 1024px) {
+  .navWrapper {
+    /* Behåller glaskonceptet i mitten men anpassar bredden för mindre skärmar 📱 */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 92%;
+    padding: 0.6rem 1.5rem; /* Ger bra balans mellan namn till vänster och hamburgare till höger */
+    top: 15px;
+  }
+
+  /* Visar hamburgarikonen och placerar den till höger */
   .menuIcon {
     display: block;
     z-index: 1001;
+    color: #131b2e; /* Matchar färgen på ditt namn/ikon */
   }
 
+  /* Gör om länk-containern till en snygg "glgardin" som fälls ut under navbaren */
   .navBarContainer {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 100%;
+    top: 70px; /* Placeras precis under den svävande navbaren */
     right: 0;
-    background-color: #b7c8e1;
-    width: 100%;
-    padding: 1rem;
-    border-radius: 0 0 0 1.5rem;
+    
+    /* En mjuk glaskänsla även för mobilmenyn som matchar temat 🍏✨ */
+    background: rgba(255, 255, 255, 0.92); 
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    
+    width: 250px; /* En lagom, stilren bredd istället för att ta upp hela skärmen */
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
     align-items: flex-end; /* Placerar texten mot höger */
-    box-shadow: 1px 1px 15px #0072f0;
+    box-shadow: 0 10px 30px rgba(142, 170, 205, 0.25);
   }
 
+  /* Aktiveras när du klickar på hamburgarmenyn */
   .navBarContainer.active {
     display: flex;
+    justify-items: end;
+    align-items: end;
   }
 
   .navLink {
-    /* Nollställ knapp-stylingen för mobilmenyn */
+    /* Nollställer knapp- och glaseffekterna från desktop så det blir ren textlänk */
     background-color: transparent;
     box-shadow: none;
     border-radius: 0;
+    border: none;
     padding: 0.8rem 0;
     width: 100%;
-    text-align: right;
-    font-size: 1rem;
-    border-bottom: 1px solid #0070f063;
+    text-align: right; /* Texten mot höger */
+    font-size: 0.95rem;
+    color: #131b2e; /* Mörk text som matchar din ljusa mobilbakgrund */
+    border-bottom: 1px solid rgba(0, 112, 240, 0.1); /* En jättetunn blå linje mellan länkarna */
+    transition: color 0.2s ease;
   }
 
   .navLink:hover {
     box-shadow: none;
     transform: none;
+    color: #0072f0; /* Länken lyser blått när man hovrar eller klickar */
+  }
+}
+
+/* Extra fix för riktigt små mobilskärmar så glaset inte blir för stort */
+@media (max-width: 480px) {
+  .navWrapper {
+    width: 95%;
+    padding: 0.5rem 1rem;
+  }
+  
+  .navBarName {
+    font-size: 1rem; /* Gör namnet/ikonen lite mindre på små mobiler */
   }
 }
