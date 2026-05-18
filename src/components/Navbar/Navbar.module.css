@@ -43,12 +43,7 @@
 
 .navLink {
   color: #000000;
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.1
-  ); 
+  background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 0.4rem;
   font-size: 0.8rem;
@@ -68,14 +63,13 @@
 }
 
 .navLink:hover {
-  transform: scale(1.08); 
-  color: #4B8EFF;
-  
-  background-color: rgba(255, 255, 255, 0.45); 
-  border-color: rgba(255, 255, 255, 0.6);
-  
+  transform: scale(1.1);
+  color: #4b8eff;
 
-  box-shadow: 0 8px 20px rgba(0, 114, 240, 0.25); 
+  background-color: rgba(255, 255, 255, 0.45);
+  border-color: rgba(255, 255, 255, 0.6);
+
+  box-shadow: 0 8px 20px rgba(0, 114, 240, 0.25);
 }
 
 .menuIcon {
@@ -85,11 +79,11 @@
 }
 
 @media (max-width: 1400px) {
- .navLink {
-  padding: 0.3rem;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
- }
+  .navLink {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
 }
 
 /* --- Mobilanpassning (Under 1024px) --- */
@@ -117,12 +111,12 @@
     position: absolute;
     top: 70px; /* Placeras precis under den svävande navbaren */
     right: 0;
-    
+
     /* En mjuk glaskänsla även för mobilmenyn som matchar temat 🍏✨ */
-    background: rgba(255, 255, 255, 0.92); 
+    background: rgba(255, 255, 255, 0.92);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    
+
     width: 250px; /* En lagom, stilren bredd istället för att ta upp hela skärmen */
     padding: 1.5rem;
     border-radius: 1.5rem;
@@ -166,7 +160,7 @@
     width: 95%;
     padding: 0.5rem 1rem;
   }
-  
+
   .navBarName {
     font-size: 1rem; /* Gör namnet/ikonen lite mindre på små mobiler */
   }
