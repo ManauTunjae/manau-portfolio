@@ -48,7 +48,12 @@
   box-shadow: 0 15px 15px rgba(40, 30, 232, 0.283);
   padding: 3rem;
   width: 360px;
-  background-color: #aea0a023;
+
+  background-color: #e8e3e323;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  transition: all 0.3s ease;
 }
 
 .matrixHeader {
@@ -129,16 +134,16 @@
 /* --- Mobilanpassning --- */
 @media (max-width: 1024px) {
   .matrixContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .githubSection {
-  width: auto;
-}
+    width: auto;
+  }
 
   .matrixRow {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 20px;
     padding-bottom: 40px;
   }
