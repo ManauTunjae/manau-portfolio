@@ -25,10 +25,10 @@ const tagIcons = {
   CSS3: <FaCss3Alt style={{ color: "#1572B6" }} />,
   JavaScript: <FaJs style={{ color: "#F7DF1E" }} />,
   "Node.js": <FaNodeJs style={{ color: "#339933" }} />,
-  Express: <SiExpress style={{ color: "#ffffff" }} />,
+  Express: <SiExpress style={{ color: "#000000" }} />,
   MongoDB: <SiMongodb style={{ color: "#47A248" }} />,
   Postman: <SiPostman style={{ color: "#FF6C37" }} />,
-  JSON: <SiJson style={{ color: "#ffffff" }} />,
+  JSON: <SiJson style={{ color: "#fff200" }} />,
   React: <FaReact style={{ color: "#61DAFB" }} />,
   Vite: <SiVite style={{ color: "#646CFF" }} />,
   Node: <SiNodedotjs color="#3C873A" size={40} />,
@@ -37,7 +37,7 @@ const tagIcons = {
 function Projects() {
   return (
     <section className={styles.projectsSection} id="projects">
-      <h2 className={styles.title}>My Works</h2>
+      <h2 className={styles.title}>Selected Works</h2>
       <div className={styles.grid}>
         {myProjects.map((project) => (
           <div key={project.id} className={styles.card}>
