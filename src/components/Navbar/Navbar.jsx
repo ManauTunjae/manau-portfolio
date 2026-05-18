@@ -18,8 +18,6 @@ function Navbar() {
 
   return (
     <nav className={styles.navWrapper}>
-      <p className={styles.navBarName}>Manau Tunjae</p>
-      
       {/* Vi växlar mellan klasserna baserat på isOpen */}
       <div className={`${styles.navBarContainer} ${isOpen ? styles.active : ""}`}>
         <Link to="intro" smooth={true} duration={500} className={styles.navLink} onClick={closeMenu}>
