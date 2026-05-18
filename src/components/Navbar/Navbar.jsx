@@ -20,15 +20,21 @@ function Navbar() {
     <div>
       <nav className={styles.navWrapper}>
         {/* Vi växlar mellan klasserna baserat på isOpen */}
-        <img
-          src="/images/logo.svg"
-          alt="logo-imgae"
-          className={styles.logoImage}
-        />
+        <Link
+          to="hero"
+          smooth={true}
+          duration={500}
+          className={styles.scrollDownBtn}
+        >
+          <img
+            src="/images/logo.svg"
+            alt="logo-imgae"
+            className={styles.logoImage}
+          />
+        </Link>
         <div
           className={`${styles.navBarContainer} ${isOpen ? styles.active : ""}`}
         >
-
           <Link
             to="intro"
             smooth={true}
