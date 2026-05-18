@@ -1,16 +1,18 @@
 import styles from "./About.module.css";
 import { FaFilePdf } from "react-icons/fa";
-import manauPhoto from "/public/images/image-about.svg";
 import { Link } from "react-scroll";
 
 function About() {
   return (
     <section className={styles.aboutSection} id="about">
-      <div className={styles.imageContent}>
-        <img
-          src={manauPhoto}
-          alt="Manau Tunjae"
-          className={styles.profileImage}
+      <div className={styles.imageAbout}>
+        <video
+          src="/public/about.mp4"
+          className={styles.contactVideo} // Din CSS-klass
+          autoPlay /* Gör att videon startar automatiskt */
+          loop /* Gör att videon spelar om och om igen */
+          muted /* CRITICAL: Chrome/Safari tillåter INTE autoplay om videon inte är ljudlös! */
+          playsInline /* Ser till att videon inte öppnas i fullskärm på iPhones */
         />
       </div>
 
