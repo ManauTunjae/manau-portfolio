@@ -21,7 +21,7 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: radiance-glow 10s ease-in-out infinite alternate;
+  animation: radiance-glow 6s ease-in-out infinite alternate;
 }
 
 @keyframes radiance-glow {
