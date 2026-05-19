@@ -42,10 +42,10 @@
 }
 
 .matrixRow {
-  border: 1px solid rgb(20, 235, 235);
+  border: 1px solid rgba(109, 113, 113, 0.257);
   border-radius: 15px;
   backdrop-filter: blur(10px);
-  box-shadow: 0 15px 15px rgba(40, 30, 232, 0.283);
+  box-shadow: 0 15px 15px rgba(80, 80, 81, 0.283);
   padding: 3rem;
   width: 360px;
 
