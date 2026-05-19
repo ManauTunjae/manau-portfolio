@@ -1,9 +1,10 @@
+/* ------------------------- Webb versionen ------------------------- */
 .heroContainer {
   width: 100%;
-  min-height: 100vh; /* Tar upp exakt hela skärmens höjd */
+  min-height: 100%;
   position: relative;
   overflow: hidden;
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 .coverWrapper {
@@ -12,7 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end; /* Placerar utforska-knappen längst ner på skärmen */
-  padding-bottom: 60px;  /* Ger knappen lite luft från botten */
+  padding-bottom: 60px; /* Ger knappen lite luft från botten */
 }
 
 .coverImage {
@@ -20,7 +21,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover; /* Ser till att bilden fyller ut hela skärmen utan att bli utsträckt */
   object-position: center;
   z-index: 1;
@@ -50,3 +51,44 @@
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0 8px 30px rgba(255, 255, 255, 0.1);
 }
+
+/* ------------------------- Webb versionen ------------------------- */
+
+/* ------------------------- iPad versionen ------------------------- */
+@media (min-width: 1024px) {
+  .heroContainer {
+    /* Säkerställer att containern tar exakt hela skärmhöjden på iPad */
+    height: 40vh; 
+    min-height: 40vh;
+    margin-top: 4rem;
+    position: relative;
+  }
+
+  .coverWrapper {
+    /* Denna sköter flexboxen som centrerar innehållet och sätter knappen i botten */
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 50px; /* Justera om du vill ha knappen högre upp på iPad */
+  }
+
+  .coverImage {
+    /* Ändra från 'fixed' till 'absolute' så den stannar inom sin container */
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Låt bilden ta 100% av containern, inte 50% */
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+  }
+
+  .scrollDownBtn {
+    /* Säkerställer att knappen hamnar ovanpå bilden */
+    z-index: 2; 
+  }
+}
+
+/* ------------------------- iPad versionen ------------------------- */
