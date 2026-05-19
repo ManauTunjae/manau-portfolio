@@ -1,3 +1,4 @@
+/* ------------------------- Webb versionen ------------------------- */
 .aboutSection {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -93,36 +94,49 @@
   background-color: #000000;
 }
 
-.contactVideo {
+.imageimageAbout {
   width: 100%;
   max-width: 500px;
   height: auto;
   border-radius: 40px;
-  object-fit: cover;
+  object-fit: fixed;
 }
 
-@media (min-width: 2100px) {
+/* ------------------------- Webb versionen ------------------------- */
+
+/* ------------------------- iPad versionen ------------------------- */
+@media (max-width: 1024px) {
   .aboutSection {
-    padding: 0 15%;
+    height: 50vh;
+    min-height: 50vh;
+    padding: 3rem;
     gap: 80px;
   }
 
   .title {
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 500;
   }
 
   .description {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     max-width: 800px;
-    margin-bottom: 6rem;
+    margin-bottom: 1rem;
   }
 
   .myProjectsBtn {
-    font-size: 1.3rem;
-    padding: 1.2rem 2rem;
+    font-size: 0.8rem;
+    width: 11rem;
   }
 }
+
+.imageAbout {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ------------------------- iPad versionen ------------------------- */
 
 @media (max-width: 820px) {
   .aboutSection {
