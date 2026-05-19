@@ -60,7 +60,7 @@
     /* Säkerställer att containern tar exakt hela skärmhöjden på iPad */
     height: 40vh; 
     min-height: 40vh;
-    margin-top: 4rem;
+    margin-top: 8rem;
     position: relative;
   }
 
