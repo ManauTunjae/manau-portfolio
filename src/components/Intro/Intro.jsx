@@ -14,14 +14,16 @@ function Intro() {
           Stockholm with a passion for turning complex problems into elegant
           digital solutions.
         </p>
-        <Link
-          to="about"
-          smooth={true}
-          duration={800}
-          className={styles.readMoreBtn}
-        >
-          READ MORE
-        </Link>
+        <div className={styles.introPara}>
+          <Link
+            to="about"
+            smooth={true}
+            duration={800}
+            className={styles.readMoreBtn}
+          >
+            READ MORE
+          </Link>
+        </div>
       </div>
       <div className={styles.imageContent}>
         <img
