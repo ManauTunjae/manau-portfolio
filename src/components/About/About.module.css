@@ -26,6 +26,7 @@
     #eca37e 70%,
     #ffe6dcc7 100%
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: radiance-glow 6s ease-in-out infinite alternate;
@@ -94,10 +95,10 @@
 
 .contactVideo {
   width: 100%;
-  max-width: 500px; 
+  max-width: 500px;
   height: auto;
-  border-radius: 40px; 
-  object-fit: cover;   
+  border-radius: 40px;
+  object-fit: cover;
 }
 
 @media (min-width: 2100px) {

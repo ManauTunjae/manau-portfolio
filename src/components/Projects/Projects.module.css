@@ -16,6 +16,7 @@
     #eca37e 70%,
     #ffe6dcc7 100%
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: radiance-glow 6s ease-in-out infinite alternate;

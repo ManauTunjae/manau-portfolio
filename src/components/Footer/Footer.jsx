@@ -9,27 +9,27 @@ function Footer() {
       <div className={styles.footerIcons}>
         {/* Instagram Icon */}
         <a
-          href="https://instagram.com/DITT-ANVÄNDARNAMN"
+          href="https://www.instagram.com/manautunjae/"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="Manau Instagram"
           className={styles.iconLink}
         >
           <FaInstagram style={{ color: "#db0000" }} />
         </a>
         {/* LinkedIn Icon */}
         <a
-          href="https://linkedin.com/in/DITT-ANVÄNDARNAMN"
+          href="https://www.linkedin.com/in/manau-tunjae-7125b730a/"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="Manau LinkedIn"
           className={styles.iconLink}
         >
           <FaLinkedin style={{ color: "#013b92" }} />
         </a>
         {/* GitHub Icon */}
         <a
-          href="https://github.com/DITT-ANVÄNDARNAMN"
+          href="https://github.com/ManauTunjae"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="Manau GitHub"
           className={styles.iconLink}
         >
           <FaGithub style={{ color: "#6f34cf" }} />
