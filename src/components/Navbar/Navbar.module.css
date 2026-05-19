@@ -156,14 +156,28 @@
   }
 }
 
-/* Extra fix för riktigt små mobilskärmar så glaset inte blir för stort */
-@media (max-width: 480px) {
+/* Extra fix för riktigt små mobilskärmar (iPhone-storlek) 📱 */
+@media (max-width: 768px) {
   .navWrapper {
-    width: 90%;
-    font-size: 1rem;
+    /* På mobilen låter vi den sträcka ut sig till 88% så logga och menyknapp får plats utan att krocka */
+    width: 88%;
+    min-width: auto;
+    padding: 0.35rem 1rem; /* Ännu lite tunnare höjd på iPhone */
+    top: 10px;
   }
 
   .navBarName {
-    font-size: 1rem; /* Gör namnet/ikonen lite mindre på små mobiler */
+    font-size: 0.9rem; /* Krymper texten lite om du har ett namn bredvid loggan */
+  }
+
+  .logoImage {
+    width: 1.8rem; /* Slimmad logga för mobil */
+    margin-right: 0.4rem;
+  }
+  
+  .navBarContainer {
+    top: 52px; /* Justerad för mobilens tunna navbar */
+    width: 200px;
   }
 }
+

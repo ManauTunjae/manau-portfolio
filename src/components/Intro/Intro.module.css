@@ -143,34 +143,69 @@
     font-size: 0.8rem;
     padding: 0.8rem;
   }
-
 }
 
 /* ------------------------- iPad versionen ------------------------- */
 
-@media (max-width: 480px) {
+/* ------------------------- iPhone / Mobil versionen ------------------------- */
+@media (max-width: 768px) {
+  
   .intro {
-    width: 932px;
-    min-width: 50%;
-    grid-template-columns: 1fr; /* Stapla bild och text */
-    text-align: center;
+    /* Ta bort 100vh så att sektionen inte tvingas bli jättehög */
+    height: auto;
+    min-height: auto;
+    
+    /* Ändra till flexbox för att enkelt stapla text och bild tätt ihop 👇 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    
+    /* Justera paddingen uppe/nere så det blir luftigt och snyggt */
+    padding: 80px 1.5rem 40px 1.5rem; 
+  }
+
+  .textContent {
+    /* Ta bort stora sidomarginaler/padding så texten får plats på smal skärm */
+    padding: 0;
+    text-align: center; /* Centrera texten för en renare mobillook */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .headerName {
+    font-size: 2.5rem; /* Lite mindre på mobil så det inte bryts fult */
     text-align: center;
-    font-size: 5rem;
-    line-height: 1.1;
+    margin-bottom: 0.5rem;
   }
+
+  .statusName {
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
   .introPara {
-    font-size: 1rem;
-    padding: 0% 5%;
+    font-size: 0.9rem;
+    text-align: center; /* Center blir oftast snyggare än justify på små mobilskärmar */
+    max-width: 100%;
     text-align: justify;
+    padding: 1rem 2rem 0 2rem;
   }
+
   .introImage {
-    max-width: 85%;
+    /* Kontrollera bildens storlek så den inte blir för enorm */
+    width: 90%; 
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
+
   .readMoreBtn {
-    padding: 0.5rem;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+    padding: 0.5rem 1rem;
   }
 }
+/* ------------------------- iPhone / Mobil versionen ------------------------- */
