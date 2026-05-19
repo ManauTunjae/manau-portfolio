@@ -56,3 +56,35 @@
     gap: 1rem;
   }
 }
+
+/* ------------------------- iPhone / Mobil versionen ------------------------- */
+@media (max-width: 768px) {
+  
+  .footerContainer {
+    height: auto; 
+    padding: 1rem 1.2rem;
+    flex-direction: column; /* Staplar text och ikoner snyggt på hög 📱 */
+    gap: 10px;
+    text-align: center;
+    border-radius: 0; /* Tar bort hörnradien i botten */
+  }
+
+  .footerText {
+    font-size: 0.85rem;
+  }
+
+  .footerIcons {
+    gap: 1.2rem;
+  }
+
+  .iconLink {
+    font-size: 1.6rem; 
+    margin: 0; 
+  }
+
+  .iconLink:hover {
+    transform: none;
+    color: #333333; /* Stänger av hoppet på mobil */
+  }
+}
+/* ---------------------------------------------------------------------------- */
