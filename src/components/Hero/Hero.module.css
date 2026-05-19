@@ -92,3 +92,43 @@
 }
 
 /* ------------------------- iPad versionen ------------------------- */
+
+/* ------------------------- iPhone / Mobil versionen ------------------------- */
+@media (max-width: 768px) {
+
+  .heroContainer {
+    /* Låt sektionen ta hela mobilskärmen så allt får plats 🚀 */
+    height: 30vh;
+    min-height: 30vh;
+    margin-top: 5rem; /* Ta bort eller minska marginalen om det behövs */
+    position: relative;
+  }
+
+  .coverWrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Stapla eventuellt innehåll vertikalt */
+    justify-content: flex-end; /* Tryck ner knappen till botten av mobilen */
+    align-items: center;
+    padding-bottom: 20px; /* Ger knappen ordentligt med luft från mobilens botten */
+  }
+
+  .coverImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Låt bilden fylla hela mobilskärmen */
+    object-fit: cover;
+    object-position: center; /* Justera till 'center' eller 'top' beroende på hur bilden beskärs på smala skärmar */
+    z-index: 1;
+  }
+
+  .scrollDownBtn {
+    z-index: 2;
+    font-size: 0.3rem; /* Lite mindre text på mobil */
+    padding: 0.3rem; /* Minska storleken lite så den passar iPhone */
+    width: auto;
+  }
+}
+/* ------------------------- iPhone / Mobil versionen ------------------------- */
