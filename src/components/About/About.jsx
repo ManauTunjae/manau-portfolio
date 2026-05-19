@@ -7,13 +7,17 @@ function About() {
     <section className={styles.aboutSection} id="about">
       <div className={styles.imageAbout}>
         <video
-          src="/public/about.mp4"
-          className={styles.contactVideo} // Din CSS-klass
-          autoPlay /* Gör att videon startar automatiskt */
-          loop /* Gör att videon spelar om och om igen */
-          muted /* CRITICAL: Chrome/Safari tillåter INTE autoplay om videon inte är ljudlös! */
-          playsInline /* Ser till att videon inte öppnas i fullskärm på iPhones */
-        />
+          width="80%"
+          height="auto"
+          controls
+          playsInline
+          muted
+          autoPlay
+          loop
+        >
+          <source src="/about.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
 
       <div className={styles.textContent}>
