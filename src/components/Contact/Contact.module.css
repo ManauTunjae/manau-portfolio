@@ -1,3 +1,4 @@
+/* ------------------------- Webb versionen ------------------------- */
 .contactSection {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr; /* Ger formuläret lite mer utrymme än bilden */
@@ -125,22 +126,124 @@
   object-fit: contain;
 }
 
-/* Responsivitet för mindre skärmar */
-@media (max-width: 900px) {
+/* ------------------------- Webb versionen ------------------------- */
+
+/* ------------------------- iPad / Mobil versionen ------------------------- */
+@media (max-width: 1024px) {
   .contactSection {
-    grid-template-columns: 1fr; /* Staplar formulär och bild på varandra */
-    min-height: auto;
+    position: relative; /* Gör att vi kan placera bilden absolut inuti denna */
+    width: 100%;
+    min-height: 100vh; /* Säkerställer att sektionen tar hela skärmen */
+    display: flex;
+    justify-content: flex-start;
+    padding: 2rem;
+    overflow: hidden;
   }
 
-  .contactContent {
-    padding: 4rem 5%;
-  }
-
-  .inputsRow {
-    grid-template-columns: 1fr; /* Input-fälten blir enskilda rader på mobilen */
-  }
-
+  /* 1. Bildbehållaren som nu ligger som bakgrund */
   .imageContact {
-    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Läggs i bakgrunden */
+  }
+
+  .contactImage {
+    width: auto;
+    height: 100%;
+    object-fit: cover; /* Ändra från contain till cover så den fyller ut hela bakgrunden */
+    object-position: bottom; /* Justera så ditt ansikte syns bra i botten/mitten */
+  }
+
+  /* 2. Formulärbehållaren som svävar ovanpå */
+  .contactContent {
+    z-index: 2; /* Sätter formuläret OVANPÅ bilden */
+    width: auto;
+    max-width: auto; /* Snygg maxbredd för formuläret på iPad */
+    
+    /* Magisk glaseffekt (transparens + blur) 🌟 */
+    background: rgba(255, 255, 255, 0.65); /* Vit med 65% synlighet */
+    backdrop-filter: blur(5px); /* Blurrar bilden bakom formuläret */
+    -webkit-backdrop-filter: blur(5px);
+    
+    margin-top: 10rem;
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(219, 200, 200, 0.706); /* Fin ljus kant */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1); /* Mjuk skugga */
+  }
+
+  /* Justera inputraderna så de matchar */
+  .inputsRow {
+    grid-template-columns: 1fr;
+  }
+
+  .submitButton {
+    font-size: 0.9rem;
+    width: 11rem;
+    padding: 0.5rem;
   }
 }
+
+/* ------------------------- iPad versionen ------------------------- */
+
+/* ------------------------- iPhone / Mobil versionen ------------------------- */
+@media (max-width: 768px) {
+  
+  .contactSection {
+    padding: 5px 1rem 40px 1rem; 
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Justera glaskortet så det sitter perfekt på iPhone */
+  .contactContent {
+    width: 100%; 
+    max-width: 100%;
+    margin-top: 2rem; /* Minskar jätte-mellanrummet från iPad! 🔝 */
+    padding: 1.5rem 1.2rem; 
+    gap: 1.5rem; 
+    box-sizing: border-box;
+  }
+
+  .contactTitle {
+    font-size: 2.2rem; 
+    text-align: center;
+  }
+
+  .contactSubtitle {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .contactInput,
+  .contactTextarea {
+    padding: 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  /* Gör knappen till fullbredd och centrerad */
+  .submitButton {
+    width: 100%; 
+    max-width: 280px;
+    margin: 0 auto;
+    font-size: 0.95rem;
+    padding: 0.8rem;
+  }
+
+  .submitButton:hover {
+    transform: none;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 15px rgba(1, 18, 38, 0.628);
+  }
+
+  .contactImage {
+    object-position: center bottom;
+  }
+}
+/* ---------------------------------------------------------------------------- */

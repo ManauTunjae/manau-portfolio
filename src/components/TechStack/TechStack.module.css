@@ -1,3 +1,4 @@
+/* ------------------------- webb versionen ------------------------- */
 .techContainer {
   display: flex;
   flex-direction: column;
@@ -131,11 +132,15 @@
   color: #000000; /* Texten blir kritvit vid hovring för extra tydlighet */
 }
 
-/* --- Mobilanpassning --- */
+/* ------------------------- webb versionen ------------------------- */
+
+/* ------------------------- iPad versionen ------------------------- */
+
 @media (max-width: 1024px) {
   .matrixContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 1rem;
   }
 
   .githubSection {
@@ -149,18 +154,97 @@
   }
 
   .matrixHeader {
-    font-size: 1.2rem;
-    border-left: 3px solid #62e6e4;
-    padding-left: 10px;
-    margin-bottom: 10px;
+    font-size: 1.3rem;
   }
 
   .matrixGrid {
-    gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 15px;
     justify-content: flex-start;
   }
 
   .iconBox {
-    font-size: 2.8rem;
+    font-size: 2rem;
   }
 }
+
+/* ------------------------- iPad versionen ------------------------- */
+
+/* ------------------------- iPhone / Mobil versionen ------------------------- */
+@media (max-width: 768px) {
+
+  .techContainer {
+    /* Minska den enorma paddingen från desktop så det passar mobilen */
+    padding: 60px 1.2rem;
+    gap: 35px;
+    width: auto;
+    margin: 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 1rem;
+    text-align: center; /* Centrera sektionens titel för en renare mobillook 🎯 */
+    margin-bottom: 15px;
+  }
+
+  /* --- GitHub Kalender på mobil --- */
+  .githubSection {
+    width: 100%;
+    /* SÄKERHETSVÄGG: Gör att kalendern går att scrolla i sidled om den är för bred ↔️ */
+    overflow-x: auto; 
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch; /* Ger mjuk scroll på iPhone */
+  }
+
+  .githubPlaceholder {
+    min-width: auto; /* Gör att kalendern behåller sin form inuti scrollen utan att klämmas ihop */
+    padding: 15px;
+    box-shadow: 0 8px 20px rgba(2, 61, 22, 0.4);
+  }
+
+  /* --- Grid för dina olika tech-kategorier --- */
+  .matrixContainer {
+    /* Ändra till en kolumn så Frontend, Backend osv staplas snyggt vertikalt 👇 */
+    grid-template-columns: 1fr; 
+    gap: 25px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .matrixRow {
+    /* VIKTIGT: Nollställ den fasta bredden 360px så boxen inte klipper skärmen! 🛑 */
+    width: 100%; 
+    max-width: 100%;
+    padding: 1.8rem; /* Lite mindre padding inuti boxen så korten får plats */
+    box-shadow: 0 10px 20px rgba(80, 80, 81, 0.15);
+  }
+
+  .matrixHeader {
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  /* --- Grid inuti varje kategori (kort-rutnätet) --- */
+  .matrixGrid {
+    grid-template-columns: 1fr 1fr 1fr; /* Behåll 2 kolumner för korten, det blir lagom */
+    gap: 15px;
+    justify-content: center;
+  }
+
+  /* --- Enskilda Ikon-kort på mobil --- */
+  .iconBox {
+    font-size: 2rem; /* Perfekt storlek för mobilskärmar */
+    padding: 0.8rem;
+    border-radius: 1.2rem;
+  }
+
+  .techName {
+    font-size: 0.75rem; /* Något mindre text under ikonen */
+  }
+
+  /* Stäng av den stora hover-skalningen för pekskärmar */
+  .techCard:hover {
+    transform: none;
+  }
+}
+/* ------------------------- iPhone / Mobil versionen ------------------------- */
