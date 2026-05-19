@@ -9,15 +9,16 @@
 
 .headerName {
   font-size: 6rem;
+  text-align: center;
   letter-spacing: 4px;
   font-weight: 600;
   margin-bottom: 3rem;
   background: linear-gradient(
     90deg,
-    #10b9b7 10%,
-    #4860bd 40%,
-    #d359a2 70%,
-    #7bdd0b 100%
+    #d8a089 10%,
+    #eaa75f9e 40%,
+    #eca37e 70%,
+    #ffe6dcc7 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -25,14 +26,14 @@
 }
 
 @keyframes radiance-glow {
-  5% {
-    filter: drop-shadow(0 0 5px #62e6e49d) drop-shadow(0 0 10px #849bfa);
+  0% {
+    filter: drop-shadow(0 0 8px #e5ae8e) drop-shadow(0 0 15px #e8c7b5);
   }
-  30% {
-    filter: drop-shadow(0 0 10px #ff6ec583) drop-shadow(0 0 20px #fffde4);
+  50% {
+    filter: drop-shadow(0 0 16px #e9d3c65f) drop-shadow(0 0 24px #fffde4);
   }
-  80% {
-    filter: drop-shadow(0 5px #62e6e46b) drop-shadow(0 0 15px #849bfa);
+  100% {
+    filter: drop-shadow(0 0 8px #e5ae8e94) drop-shadow(0 0 15px #e5ae8e);
   }
 }
 

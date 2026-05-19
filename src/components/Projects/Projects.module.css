@@ -6,26 +6,32 @@
 
 .title {
   text-align: center;
-  font-size: 3.5rem; 
+  padding: 2rem;
+  font-size: 4rem;
   font-weight: 500;
-  margin-bottom: 30px;
-  background: linear-gradient(90deg, #62e6e4 10%, #6a83e7 40%, #ff6ec4 70%, #fffde4 100%);
+  background: linear-gradient(
+    90deg,
+    #d8a089 10%,
+    #eaa75f9e 40%,
+    #eca37e 70%,
+    #ffe6dcc7 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: radiance-glow 4s ease-in-out infinite alternate;
+  animation: radiance-glow 6s ease-in-out infinite alternate;
 }
 
 @keyframes radiance-glow {
   0% {
-    filter: drop-shadow(0 0 8px #62e6e4) drop-shadow(0 0 15px #849bfa);
+    filter: drop-shadow(0 0 8px #e5ae8e) drop-shadow(0 0 15px #e8c7b5);
   }
   50% {
-    filter: drop-shadow(0 0 16px #ff6ec4) drop-shadow(0 0 24px #fffde4);
+    filter: drop-shadow(0 0 16px #e9d3c65f) drop-shadow(0 0 24px #fffde4);
   }
   100% {
-    filter: drop-shadow(0 0 8px #62e6e4) drop-shadow(0 0 15px #849bfa);
+    filter: drop-shadow(0 0 8px #e5ae8e94) drop-shadow(0 0 15px #e5ae8e);
   }
-} 
+}
 
 .syntaxParen {
   color: #ffd700;
@@ -108,7 +114,7 @@
 .description {
   font-size: 0.95rem;
   line-height: 2;
-  color: #38485D;
+  color: #38485d;
   flex-grow: 1;
 }
 
