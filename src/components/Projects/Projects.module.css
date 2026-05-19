@@ -152,7 +152,7 @@
 }
 
 .links a:hover {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 @media (min-width: 2100px) {
