@@ -107,7 +107,7 @@
 /* ------------------------- iPad versionen ------------------------- */
 @media (max-width: 1024px) {
   .aboutSection {
-    height: 50vh;
+    height: 70vh;
     min-height: 50vh;
     padding: 3rem;
     gap: 80px;
