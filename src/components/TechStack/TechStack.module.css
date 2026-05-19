@@ -1,3 +1,4 @@
+/* ------------------------- webb versionen ------------------------- */
 .techContainer {
   display: flex;
   flex-direction: column;
@@ -131,11 +132,15 @@
   color: #000000; /* Texten blir kritvit vid hovring för extra tydlighet */
 }
 
-/* --- Mobilanpassning --- */
+/* ------------------------- webb versionen ------------------------- */
+
+/* ------------------------- iPad versionen ------------------------- */
+
 @media (max-width: 1024px) {
   .matrixContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 1rem;
   }
 
   .githubSection {
@@ -149,18 +154,17 @@
   }
 
   .matrixHeader {
-    font-size: 1.2rem;
-    border-left: 3px solid #62e6e4;
-    padding-left: 10px;
-    margin-bottom: 10px;
+    font-size: 1.3rem;
   }
 
   .matrixGrid {
-    gap: 25px;
+    gap: 15px;
     justify-content: flex-start;
   }
 
   .iconBox {
-    font-size: 2.8rem;
+    font-size: 2rem;
   }
 }
+
+/* ------------------------- iPad versionen ------------------------- */
