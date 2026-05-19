@@ -51,7 +51,7 @@ function Projects() {
             <div className={styles.cardGlow}></div>{" "}
             {/* För den snygga effekten */}
             <h3 className={styles.projectTitle}>{project.title}</h3>
-            <p>{project.description}</p>
+            <p className={styles.description}>{project.description}</p>
             <div className={styles.tags}>
               {project.tags.map((tag) => (
                 <span key={tag} className={styles.tagIcon}>
