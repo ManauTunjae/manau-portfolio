@@ -1,0 +1,52 @@
+.heroContainer {
+  width: 100%;
+  min-height: 100vh; /* Tar upp exakt hela skärmens höjd */
+  position: relative;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.coverWrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Placerar utforska-knappen längst ner på skärmen */
+  padding-bottom: 60px;  /* Ger knappen lite luft från botten */
+}
+
+.coverImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ser till att bilden fyller ut hela skärmen utan att bli utsträckt */
+  object-position: center;
+  z-index: 1;
+}
+
+/* Din snygga, matchande glasknapp ovanpå bilden */
+.scrollDownBtn {
+  position: relative;
+  z-index: 2; /* Lägger knappen ovanpå bilden */
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  padding: 0.8rem 2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(175, 170, 170, 0.3);
+  transition: all 0.3s ease;
+}
+
+.scrollDownBtn:hover {
+  transform: scale(1.8);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 30px rgba(255, 255, 255, 0.1);
+}

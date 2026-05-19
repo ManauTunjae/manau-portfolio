@@ -1,32 +1,38 @@
 .projectsSection {
   padding: 100px 5%;
   background-color: transparent;
-  color: white;
   min-height: 80vh;
 }
 
 .title {
   text-align: center;
-  font-size: 3.5rem; 
+  padding: 2rem;
+  font-size: 4rem;
   font-weight: 500;
-  margin-bottom: 30px;
-  background: linear-gradient(90deg, #62e6e4 10%, #6a83e7 40%, #ff6ec4 70%, #fffde4 100%);
+  background: linear-gradient(
+    90deg,
+    #d8a089 10%,
+    #eaa75f9e 40%,
+    #eca37e 70%,
+    #ffe6dcc7 100%
+  );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: radiance-glow 4s ease-in-out infinite alternate;
+  animation: radiance-glow 6s ease-in-out infinite alternate;
 }
 
 @keyframes radiance-glow {
   0% {
-    filter: drop-shadow(0 0 8px #62e6e4) drop-shadow(0 0 15px #849bfa);
+    filter: drop-shadow(0 0 8px #e5ae8e) drop-shadow(0 0 15px #e8c7b5);
   }
   50% {
-    filter: drop-shadow(0 0 16px #ff6ec4) drop-shadow(0 0 24px #fffde4);
+    filter: drop-shadow(0 0 16px #e9d3c65f) drop-shadow(0 0 24px #fffde4);
   }
   100% {
-    filter: drop-shadow(0 0 8px #62e6e4) drop-shadow(0 0 15px #849bfa);
+    filter: drop-shadow(0 0 8px #e5ae8e94) drop-shadow(0 0 15px #e5ae8e);
   }
-} 
+}
 
 .syntaxParen {
   color: #ffd700;
@@ -52,8 +58,7 @@
 
 .card {
   position: relative;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(109, 113, 113, 0.257);
   border-radius: 16px;
   padding: 30px;
   overflow: hidden;
@@ -64,12 +69,13 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  box-shadow: 0 15px 15px rgba(80, 80, 81, 0.283);
 }
 
 .card:hover {
   transform: translateY(-10px);
-  border: 1px solid rgba(0, 42, 255, 0.802);
-  box-shadow: 0 5px 60px rgba(129, 3, 171, 0.779);
+  border: 1px solid rgba(255, 140, 0, 0.802);
+  box-shadow: 0 5px 60px rgba(127, 89, 23, 0.466);
 }
 
 .imageWrapper {
@@ -99,14 +105,14 @@
 .projectTitle {
   font-size: 1.4rem;
   margin: 10px 0;
-  color: #9cdcfe;
+  color: #213145;
   text-align: center;
 }
 
 .description {
   font-size: 0.95rem;
   line-height: 2;
-  color: #cccccc;
+  color: #38485d;
   flex-grow: 1;
 }
 
@@ -147,7 +153,7 @@
 }
 
 .links a:hover {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 @media (min-width: 2100px) {

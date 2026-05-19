@@ -9,37 +9,39 @@
 
 .headerName {
   font-size: 6rem;
+  text-align: center;
   letter-spacing: 4px;
   font-weight: 600;
   margin-bottom: 3rem;
   background: linear-gradient(
     90deg,
-    #62e6e4bd 10%,
-    #6a83e7b2 40%,
-    #ff6ec59e 70%,
-    #fffde48a 100%
+    #d8a089 10%,
+    #eaa75f9e 40%,
+    #eca37e 70%,
+    #ffe6dcc7 100%
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: radiance-glow 10s ease-in-out infinite alternate;
+  animation: radiance-glow 6s ease-in-out infinite alternate;
 }
 
 @keyframes radiance-glow {
-  5% {
-    filter: drop-shadow(0 0 5px #62e6e49d) drop-shadow(0 0 10px #849bfa);
+  0% {
+    filter: drop-shadow(0 0 8px #e5ae8e) drop-shadow(0 0 15px #e8c7b5);
   }
-  30% {
-    filter: drop-shadow(0 0 10px #ff6ec583) drop-shadow(0 0 20px #fffde4);
+  50% {
+    filter: drop-shadow(0 0 16px #e9d3c65f) drop-shadow(0 0 24px #fffde4);
   }
-  80% {
-    filter: drop-shadow(0 5px #62e6e46b) drop-shadow(0 0 15px #849bfa);
+  100% {
+    filter: drop-shadow(0 0 8px #e5ae8e94) drop-shadow(0 0 15px #e5ae8e);
   }
 }
 
 .statusName {
   font-size: 2rem;
   font-weight: 400;
-  color: #d4c7b0;
+  color: #000000;
 }
 
 .introPara {
@@ -47,29 +49,54 @@
   margin: 1rem 0 3rem 0;
   line-height: 1.6;
   font-size: 1.5rem;
-  color: #e0e0e0;
+  color: #505f76;
 }
 
 .introImage {
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .readMoreBtn {
-  background-color: #000000;
-  color: rgb(198, 198, 198);
-  border: none;
-  padding: 1rem;
-  font-size: 1rem;
-  font-weight: 550;
-  letter-spacing: 1px;
+  background-color: rgba(255, 255, 255, 0.05); /* Subtil glasbas */
+  color: #131b2e; /* Mörk, elegant text som matchar din nya stil */
+  border: 1px solid rgba(0, 0, 0, 0.223); /* Tunn, fin glaskant */
+  padding: 0.8rem 2rem; /* Lite mer avlång och modern form */
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
   cursor: pointer;
-  border-radius: 9rem;
-  transition: opacity 0.3s ease;
-  box-shadow: 0 1.5px 8px rgba(222, 174, 213, 0.701);
+  border-radius: 999px; /* Helt rundad för att matcha navlänkarna! */
+  text-decoration: none;
+  display: inline-block;
+
+  /* Mjuk och fjädrande övergång för Apple-känslan */
+  transition:
+    transform 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    color 0.3s ease;
+
+  /* En mjuk, sofistikerad skugga istället för den starka lila */
+  box-shadow:
+    0 4px 15px rgba(1, 18, 38, 0.543),
+    inset 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+/* --- HÄR POPPAR GLASKÄNSLAN UPPTILL! --- */
+.readMoreBtn:hover {
+  transform: scale(1.05); /* Knappen blir mjukt lite större */
+  color: #ffffff; /* Din snygga blåa färg aktiveras */
+
+  /* Glaset blir ljusare och släpper igenom mer ljus */
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.5);
+
+  /* Skuggan blir djupare och får en mjuk blå ton vid hovring */
+  box-shadow: 0 8px 20px rgba(0, 114, 240, 0.15);
 }
 
 .readMoreBtn:hover {
-  background-color: #524a41;
+  background-color: #000000;
 }
 
 /* 2500px+ screens */
@@ -107,10 +134,10 @@
     gap: 10px;
   }
   .intro > div:nth-child(1) {
-    order: 2; 
+    order: 2;
   }
   .headerName {
-    font-size: 3.5rem; 
+    font-size: 3.5rem;
     line-height: 1.1;
     margin: 1.5rem auto;
   }
