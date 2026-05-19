@@ -72,7 +72,7 @@ function Navbar() {
             MY PROJECTS
           </Link>
           <Link
-            to="contact"
+            to="footer"
             smooth={true}
             duration={500}
             className={styles.navLink}

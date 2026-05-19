@@ -2,14 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #B7C8E1;
+  background-color: #f3f5f9;
   position: end;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 60px;
+  height: 50px;
   z-index: 1000;
-  box-shadow: 0 2px 40px #0072F0;
+  box-shadow: 0 2px 40px ;
   border-radius: 1rem 1rem 0 0;
   padding: 0 20px;
 }
@@ -18,12 +18,8 @@
   font-size: 0.9rem;
   font-weight: 800;
   letter-spacing: 1px;
-  color: #ffffff;
+  color: #ff0000;
   margin: 0;
-  background: linear-gradient(90deg, #10b9b7 10%, #4860bd 40%, #d359a2 70%, #7bdd0b 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: radiance-glow 4s ease-in-out infinite alternate;
 }
 
 @keyframes radiance-glow {
