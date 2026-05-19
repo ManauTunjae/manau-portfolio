@@ -25,7 +25,7 @@ function Intro() {
       </div>
       <div className={styles.imageContent}>
         <img
-          src="/images/Image-intro.jpg"
+          src="/images/image-intro.svg"
           alt="intro-imgae"
           className={styles.introImage}
         />

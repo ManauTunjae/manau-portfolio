@@ -25,7 +25,7 @@ const ScrollToTop = () => {
       className={`${styles.scrollWrapper} ${isVisible ? styles.visible : styles.hidden}`}
     >
       <Link
-        to="intro"
+        to="hero"
         smooth={true}
         duration={800}
         className={styles.scrollLink}
