@@ -41,9 +41,9 @@ export const myProjects = [
   },
   {
     id: 5,
-    title: "Pokemon Application",
+    title: "Eventera",
     description:
-      "An interactive React app using the PokéAPI. Users can browse the original 151 Pokémon and view detailed statistics and data.",
+      "Collaboration project with frontend developer that is about a platform that brings together different events from different cities in Sweden",
     tags: ["HTML5", "CSS3", "JavaScript", "Node", "Express", "MongoDB"],
     github: "https://github.com/ManauTunjae/webbshop-2026-fe.git",
     live: "https://frida1989.github.io/webbshop-2026-fe/index.html",
