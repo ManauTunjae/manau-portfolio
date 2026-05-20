@@ -88,9 +88,9 @@ function TechStack() {
           </div>
         </div>
 
-        {/* Databas Rad */}
+        {/* Backend Rad */}
         <div className={styles.matrixRow}>
-          <h4 className={styles.matrixHeader}>Database</h4>
+          <h4 className={styles.matrixHeader}>Back-End</h4>
           <div className={styles.matrixGrid}>
             {backendTech.map((tech, i) => (
               <div
@@ -105,9 +105,9 @@ function TechStack() {
           </div>
         </div>
 
-        {/* Back-End Rad */}
+        {/* Database Rad */}
         <div className={styles.matrixRow}>
-          <h4 className={styles.matrixHeader}>Back-End</h4>
+          <h4 className={styles.matrixHeader}>Database</h4>
           <div className={styles.matrixGrid}>
             {databaseTech.map((tech, i) => (
               <div
