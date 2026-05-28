@@ -55,10 +55,10 @@
   display: inline-block;
 
   transition:
-    transform 0.4s cubic-bezier(0.25, 1, 0.5, 1),
-    background-color 0.4s ease,
-    box-shadow 0.4s ease,
-    color 0.4s ease;
+    transform 0.35s cubic-bezier(0.25, 1, 0.5, 1),
+    background-color 0.35s ease,
+    box-shadow 0.35s ease,
+    color 0.35s ease;
 }
 
 .navLink:hover {
@@ -70,8 +70,8 @@
   box-shadow: 0 8px 20px rgba(50, 52, 55, 0.25);
 
   transition:
-    transform 0.8s cubic-bezier(0.25, 1, 0.5, 1),
-    box-shadow 0.5s ease
+    transform 0.35s cubic-bezier(0.25, 1, 0.5, 1),
+    box-shadow 0.35s ease
 }
 
 .menuIcon {
@@ -155,7 +155,7 @@
     font-size: 0.95rem;
     color: #131b2e; /* Mörk text som matchar din ljusa mobilbakgrund */
     border-bottom: 1px solid rgba(0, 112, 240, 0.1); /* En jättetunn blå linje mellan länkarna */
-    transition: color 0.2s ease;
+    transition: color 1s ease;
   }
 
   .navLink:hover {

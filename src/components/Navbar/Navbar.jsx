@@ -2,6 +2,7 @@ import styles from "./Navbar.module.css";
 import { Link } from "react-scroll";
 import { IoMenu, IoClose } from "react-icons/io5"; // Lade till stäng-ikon
 import { useEffect, useState } from "react";
+import { TbEaseInOut } from "react-icons/tb";
 
 function Navbar() {
   // Menyn ska vara stängd från början på mobilen
@@ -34,9 +35,12 @@ function Navbar() {
         {/* Vi växlar mellan klasserna baserat på isOpen */}
         <Link
           to="hero"
-          smooth={true}
-          duration={500}
+          smooth={'easeInOutCubic'}
+          duration={800}
+          spy={true}
+          offset={-70}
           className={styles.scrollDownBtn}
+          onClick={closeMenu}
         >
           <img
             src="/images/logo.svg"
@@ -49,8 +53,10 @@ function Navbar() {
         >
           <Link
             to="intro"
-            smooth={true}
-            duration={500}
+            smooth={'easeInOutCubic'}
+            duration={800}
+            spy={true}
+            offset={-70}
             className={styles.navLink}
             onClick={closeMenu}
           >
@@ -58,8 +64,10 @@ function Navbar() {
           </Link>
           <Link
             to="about"
-            smooth={true}
-            duration={500}
+            smooth={'easeInOutCubic'}
+            duration={800}
+            spy={true}
+            offset={-70}
             className={styles.navLink}
             onClick={closeMenu}
           >
@@ -67,8 +75,10 @@ function Navbar() {
           </Link>
           <Link
             to="stack"
-            smooth={true}
-            duration={500}
+            smooth={'easeInOutCubic'}
+            duration={800}
+            spy={true}
+            offset={-70}
             className={styles.navLink}
             onClick={closeMenu}
           >
@@ -76,8 +86,10 @@ function Navbar() {
           </Link>
           <Link
             to="projects"
-            smooth={true}
-            duration={500}
+            smooth={'easeInOutCubic'}
+            duration={800}
+            spy={true}
+            offset={-70}
             className={styles.navLink}
             onClick={closeMenu}
           >
@@ -85,8 +97,10 @@ function Navbar() {
           </Link>
           <Link
             to="footer"
-            smooth={true}
-            duration={500}
+            smooth={'easeInOutCubic'}
+            duration={800}
+            spy={true}
+            offset={-70}
             className={styles.navLink}
             onClick={closeMenu}
           >
