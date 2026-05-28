@@ -1,7 +1,7 @@
 import styles from "./Navbar.module.css";
 import { Link } from "react-scroll";
 import { IoMenu, IoClose } from "react-icons/io5"; // Lade till stäng-ikon
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Navbar() {
   // Menyn ska vara stängd från början på mobilen
@@ -15,6 +15,18 @@ function Navbar() {
   const closeMenu = () => {
     setIsOpen(false);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (isOpen) {
+        setIsOpen(false);
+      }
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [isOpen]);
 
   return (
     <div>
