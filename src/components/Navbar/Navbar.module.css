@@ -71,7 +71,7 @@
 
   transition:
     transform 0.35s cubic-bezier(0.25, 1, 0.5, 1),
-    box-shadow 0.35s ease
+    box-shadow 0.35s ease;
 }
 
 .menuIcon {
@@ -80,11 +80,25 @@
   cursor: pointer;
 }
 
+@media (max-width: 1503px) {
+  .navLink {
+    padding: 0.3rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.8px;
+  }
+
+  .navBarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
 @media (max-width: 1400px) {
   .navLink {
     padding: 0.3rem;
     font-size: 0.8rem;
-    letter-spacing: 1px;
   }
 }
 
@@ -129,7 +143,9 @@
     opacity: 0;
     pointer-events: none;
     transform: translateY(-10px);
-    transition: opacity 0.4s ease, tranform 0.4s ease;
+    transition:
+      opacity 0.4s ease,
+      tranform 0.4s ease;
   }
 
   /* Aktiveras när du klickar på hamburgarmenyn */
@@ -183,10 +199,9 @@
     width: 1.8rem; /* Slimmad logga för mobil */
     margin-right: 0.4rem;
   }
-  
+
   .navBarContainer {
     top: 52px; /* Justerad för mobilens tunna navbar */
     width: 200px;
   }
 }
-
