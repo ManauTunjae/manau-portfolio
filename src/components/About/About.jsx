@@ -45,7 +45,7 @@ function About() {
             MY PROJECTS
           </Link>
           <a
-            href="/CV_Manau_Tunjae.pdf"
+            href="/CV-Manau_Tunjae.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.myProjectsBtn} // Samma klass = samma utseende! 🎨
