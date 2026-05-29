@@ -63,7 +63,7 @@ function TechStack() {
     <section className={styles.techContainer} id="stack">
       {/* --- GITHUB ACTIVITY --- */}
       <div className={styles.githubSection}>
-        <h3 className={styles.sectionTitle}>GitHub Activity & Tech I use</h3>
+        <h3 className={styles.sectionTitle}>GitHub Activity & Tech jag använder</h3>
         <div className={styles.githubPlaceholder}>
           <GitHubCalendar username="ManauTunjae" colorScheme="light" />
         </div>
