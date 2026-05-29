@@ -10,13 +10,6 @@
   width: 100%;
 }
 
-.textContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-}
-
 .title {
   font-size: 4rem;
   font-weight: 500;
@@ -26,29 +19,36 @@
     #eaa75f9e 40%,
     #eca37e 70%,
     #ffe6dcc7 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: radiance-glow 6s ease-in-out infinite alternate;
-}
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: radiance-glow 6s ease-in-out infinite alternate;
+  }
+  
 
-@keyframes radiance-glow {
-  0% {
-    filter: drop-shadow(0 0 8px #e5ae8e) drop-shadow(0 0 15px #e8c7b5);
+  @keyframes radiance-glow {
+    0% {
+      filter: drop-shadow(0 0 8px #e5ae8e) drop-shadow(0 0 15px #e8c7b5);
+    }
+    50% {
+      filter: drop-shadow(0 0 16px #e9d3c65f) drop-shadow(0 0 24px #fffde4);
+    }
+    100% {
+      filter: drop-shadow(0 0 8px #e5ae8e94) drop-shadow(0 0 15px #e5ae8e);
+    }
   }
-  50% {
-    filter: drop-shadow(0 0 16px #e9d3c65f) drop-shadow(0 0 24px #fffde4);
+  
+  .textContent {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
   }
-  100% {
-    filter: drop-shadow(0 0 8px #e5ae8e94) drop-shadow(0 0 15px #e5ae8e);
-  }
-}
 
 .description {
   max-width: 600px;
   margin: 1rem 0 3rem 0;
-  line-height: 1.7;
+  line-height: 1.6;
   font-size: 1.4rem;
   color: #505f76;
 }
@@ -109,7 +109,7 @@
   .aboutSection {
     height: 70vh;
     min-height: 50vh;
-    padding: 3rem;
+    padding: 2.5rem;
     gap: 80px;
   }
 
@@ -149,7 +149,7 @@
     height: auto;
     min-height: auto;
     padding: 60px 1.5rem;
-    gap: 2.5rem; 
+    gap: 2rem; 
     width: 100%;
   }
 
@@ -169,7 +169,7 @@
     max-width: 100%;
     padding: 1rem 1rem 0 1rem;
     line-height: 1.6;
-    text-align: justify;
+    text-align: start;
   }
 
   /* 1. STYLA CONTAINER FÖR KNAPPARNA HÄR 🌟 */
