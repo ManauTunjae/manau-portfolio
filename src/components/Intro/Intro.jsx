@@ -8,11 +8,18 @@ function Intro() {
     <section className={styles.intro} id="intro">
       <div className={styles.textContent}>
         <h1 className={styles.headerName}>MANAU TUNJAE</h1>
-        <h2 className={styles.statusName}>Fullstack Web Developer</h2>
+        <h2 className={styles.statusName}>Fullstack Webbutvecklare</h2>
         <p className={styles.introPara}>
-          Hi there, I'm a Fullstack Web Developer student at Nackademin in
-          Stockholm with a passion for turning complex problems into elegant
-          digital solutions.
+          Hej! Jag heter Manau och jag är en blivande Fullstack Webbutvecklare.
+          Nu studerar jag på Nackademin Yrkeshögskolan i Stockholm. Med passion
+          att förvandla komplexa problem till eleganta digitala lösningar. 
+        </p>
+        <p className={styles.introPara}>
+          Just
+          nu förbereder jag mig för min LIA-period (praktik) till hösten/vintern
+          2026, där jag ser fram emot att bidra med mina kunskaper inom modern
+          webbteknik och samtidigt fortsätta utvecklas tillsammans med erfarna
+          utvecklare.
         </p>
         <div className={styles.introPara}>
           <Link

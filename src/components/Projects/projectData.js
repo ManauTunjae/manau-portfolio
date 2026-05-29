@@ -3,7 +3,7 @@ export const myProjects = [
     id: 1,
     title: "mini-applicant tracking system",
     description:
-      "Mini-ATS is a modern, full-stack application built to simplify the recruiting process. With a focus on speed, AI insights, and a clean user interface, it helps recruiters manage job postings and candidates efficiently.",
+      "Mini-ATS är en modern fullstack-applikation byggd för att förenkla rekryteringsprocessen. Med fokus på hastighet, AI-insikter och ett rent användargränssnitt hjälper den rekryterare att hantera jobbannonser och kandidater effektivt.",
     tags: ["React", "Vite", "JavaScript", "CSS3"],
     github: "https://github.com/ManauTunjae/mini-applicant-tracking-system", // Din länk
     live: "https://mini-ats.netlify.app", // Din live-länk
@@ -13,7 +13,7 @@ export const myProjects = [
     id: 2,
     title: "Professional Portfolio",
     description:
-      "My personal developer portfolio built with React. Features dynamic project rendering, custom CSS modules for a 'code-editor' aesthetic, and a fully responsive layout.",
+      "Min personliga utvecklarportfölj byggd med React. Funktioner inkluderar dynamisk projektrendering, anpassade CSS-moduler för en 'code-editor' estetik, och en helt responsiv layout.",
     tags: ["React", "Vite", "JavaScript", "CSS3"],
     github: "https://github.com/ManauTunjae/manau-portfolio", // Din länk
     live: "www.manautunjae.se", // Din live-länk
@@ -23,7 +23,7 @@ export const myProjects = [
     id: 3,
     title: "Quiz Application",
     description:
-      "A category-based quiz app focusing on JSON data management and DOM manipulation to create a seamless user experience.",
+      "En kategoribaserad quiz-app med fokus på JSON-datahantering och DOM-manipulation för att skapa en sömlös användarupplevelse.",
     tags: ["JavaScript", "HTML5", "CSS3", "JSON"],
     github: "https://github.com/ManauTunjae/quizApplikation",
     live: "https://quizappllication.netlify.app",
@@ -33,7 +33,7 @@ export const myProjects = [
     id: 4,
     title: "HireFlow ATS-application Backend",
     description:
-      "This is a secure backend system built to streamline recruitment processes. The application handles different user roles, data validation, and cloud-based image management.",
+      "Detta är ett säkert backend-system byggt för att strömna rekryteringsprocesser. Applikationen hanterar olika användarroller, datavalidering och molnbaserad bildhantering.",
     tags: ["JavaScript", "Node", "Express", "MongoDB"],
     github: "https://github.com/ManauTunjae/hireflow-backend.git",
     live: "https://hireflow-backend-ten.vercel.app/",
@@ -43,7 +43,7 @@ export const myProjects = [
     id: 5,
     title: "Eventera",
     description:
-      "Collaboration project with frontend developer that is about a platform that brings together different events from different cities in Sweden",
+      "Samarbetsprojekt med frontend-utvecklare som handlar om en plattform som sammanför olika evenemang från olika städer i Sverige. Backend byggd med Node.js, Express och MongoDB, med fokus på REST API-design och databasstrukturering.",
     tags: ["HTML5", "CSS3", "JavaScript", "Node", "Express", "MongoDB"],
     github: "https://github.com/ManauTunjae/webbshop-2026-fe.git",
     live: "https://frida1989.github.io/webbshop-2026-fe/index.html",
@@ -53,7 +53,7 @@ export const myProjects = [
     id: 6,
     title: "Pokemon Application",
     description:
-      "An interactive React app using the PokéAPI. Users can browse the original 151 Pokémon and view detailed statistics and data.",
+      "En interaktiv React-app som använder PokéAPI. Användare kan bläddra bland de ursprungliga 151 Pokémon och se detaljerad statistik och data.",
     tags: ["React", "Vite", "JavaScript", "CSS3"],
     github: "https://github.com/ManauTunjae/react-pokemon-app.git",
     live: "https://zippy-stroopwafel-04bc8a.netlify.app",
@@ -63,7 +63,7 @@ export const myProjects = [
     id: 7,
     title: "Dynamic Blog Platform",
     description:
-      "A dynamic blog platform featuring interactive posts. Demonstrates array data handling, dynamic DOM rendering, and a fully responsive layout.",
+      "En dynamisk bloggplattform med interaktiva inlägg. Demonstrerar array-datahantering, dynamisk DOM-rendering och en helt responsiv layout.",
     tags: ["JavaScript", "HTML5", "CSS3"],
     github: "https://github.com/ManauTunjae/blog-platform",
     live: "https://easyblogg.netlify.app",
@@ -73,7 +73,7 @@ export const myProjects = [
     id: 8,
     title: "Rhythm API",
     description:
-      "A robust REST API for music management. Features secure authentication with JWT and full MongoDB database integration.",
+      "Ett robust REST API för musikhantering. Har säker autentisering med JWT och fullständig MongoDB-databasintegration.",
     tags: ["Node.js", "Express", "MongoDB", "Postman"],
     github: "https://github.com/ManauTunjae/rhythm-api.git",
     type: "Backend",

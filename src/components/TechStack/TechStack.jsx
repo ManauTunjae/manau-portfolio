@@ -22,7 +22,8 @@ import {
   SiMongoose,
 } from "react-icons/si";
 import { DiVisualstudio, DiScrum } from "react-icons/di";
-import { TbBrandJavascript } from "react-icons/tb"; // Snygg JS-ikon
+import { TbBrandJavascript } from "react-icons/tb";
+import { useState, useEffect } from "react";
 import { GitHubCalendar } from "react-github-calendar";
 
 function TechStack() {
@@ -59,13 +60,36 @@ function TechStack() {
     { icon: <DiScrum />, name: "Scrum / Agilt", color: "#62A03F" },
   ];
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    handleResize();
+    
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  } , []);
+
+  const selectLastHalfYear = (contribs) => {
+    if (isMobile) {
+      return contribs.slice(-140); 
+    }
+    return contribs;
+  };
+
   return (
     <section className={styles.techContainer} id="stack">
       {/* --- GITHUB ACTIVITY --- */}
       <div className={styles.githubSection}>
-        <h3 className={styles.sectionTitle}>GitHub Activity & Tech I use</h3>
+        <h3 className={styles.sectionTitle}>GitHub Activity & Tech jag använder</h3>
         <div className={styles.githubPlaceholder}>
-          <GitHubCalendar username="ManauTunjae" colorScheme="light" />
+          <GitHubCalendar 
+            username="ManauTunjae" 
+            colorScheme="light" 
+            transformData={selectLastHalfYear} 
+          />
         </div>
       </div>
 

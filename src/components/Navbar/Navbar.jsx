@@ -71,7 +71,7 @@ function Navbar() {
             className={styles.navLink}
             onClick={closeMenu}
           >
-            GET TO KNOW ME
+            OM MIG
           </Link>
           <Link
             to="stack"
@@ -93,7 +93,7 @@ function Navbar() {
             className={styles.navLink}
             onClick={closeMenu}
           >
-            MY PROJECTS
+            MINA PROJEKT
           </Link>
           <Link
             to="footer"
@@ -104,7 +104,7 @@ function Navbar() {
             className={styles.navLink}
             onClick={closeMenu}
           >
-            GET IN TOUCH
+            KONTAKTA MIG
           </Link>
         </div>
 

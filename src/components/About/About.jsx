@@ -21,19 +21,24 @@ function About() {
       </div>
 
       <div className={styles.textContent}>
-        <h2 className={styles.title}>GET TO KNOW ME</h2>
+        <h2 className={styles.title}>Manau! Vem är du?</h2>
         <p className={styles.description}>
-          My journey into tech is driven by a mix of logical thinking and a deep
-          curiosity for how things work under the hood. Whether I'm crafting
-          responsive front-end interfaces or architecting robust back-end logic,
-          I love the 'YESS!' moment when the code finally clicks.
+          Min resa inom tech drivs av en kombination av logiskt tänkande och en
+          stor nyfikenhet på hur saker fungerar under huven. Oavsett om jag
+          skapar responsiva gränssnitt i frontend eller arkitekterar robust
+          logik i backend, älskar jag den där 'JA!'-känslan när koden äntligen
+          klickar. Som utvecklare värdesätter jag kontinuerligt lärande och
+          lagarbete. Jag vill inte bara skriva kod – jag vill bygga meningsfulla
+          upplevelser som gör skillnad på riktigt.
           <br />
           <br />
-          As a developer, I value continuous learning and collaboration. I don’t
-          just want to write code—I want to build meaningful experiences that
-          make an impact. When I’m not debugging or exploring new frameworks,
-          you’ll likely find me logging miles on a treadmill or savoring a
-          coffee at a café in Stockholm.
+          När jag inte sitter framför skärmen och djupdyker i nya ramverk hittar
+          du mig oftast i löparspåret eller på löpbandet. Just nu har jag siktet
+          helt inställt på mitt nästa stora mål: att klara ett 10k-lopp! Att
+          utmana mig själv i löpningen ger mig exakt samma kick som att knäcka
+          en svår bugg. Efter ett tufft träningspass eller en intensiv
+          kodningssession tar jag gärna en välförtjänt kaffe på något mysigt
+          café här i Stockholm eller i Katrineholm.
         </p>
         <div className={styles.buttonContainer}>
           <Link
@@ -42,7 +47,7 @@ function About() {
             duration={800}
             className={styles.myProjectsBtn}
           >
-            MY PROJECTS
+            PROJEKT
           </Link>
           <a
             href="/CV-Manau_Tunjae.pdf"
@@ -50,8 +55,8 @@ function About() {
             rel="noopener noreferrer"
             className={styles.myProjectsBtn} // Samma klass = samma utseende! 🎨
           >
-            <FaFilePdf style={{ marginRight: "1rem" }} />
-            RESUME
+            <FaFilePdf style={{ marginRight: "0.5rem" }} />
+            CV
           </a>
         </div>
       </div>

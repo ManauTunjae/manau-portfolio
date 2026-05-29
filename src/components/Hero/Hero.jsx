@@ -20,7 +20,7 @@ function Hero() {
           duration={500}
           className={styles.scrollDownBtn}
         >
-          EXPLORE PORTFOLIO ↓
+          UTFORSKA PORTFÖLJEN ↓
         </Link>
       </div>
     </section>

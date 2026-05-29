@@ -19,16 +19,16 @@ const Contact = () => {
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        body: formData
+        body: formData,
       });
 
       const data = await response.json();
 
       if (data.success) {
-        setResult("Thanks! I've got your message, hear from me soon. 🙌🏼");
+        setResult("Tack! Jag har fått ditt meddelande, hör av mig snart. 🙌🏼");
         event.target.reset(); // Tömmer formuläret efter lyckat skick!
       } else {
-        setResult("Something went wrong. Please try again. ❌");
+        setResult("Något gick fel. Försök igen. ❌");
       }
     } catch (error) {
       setResult("Network error. Please try again later.", error);
@@ -41,10 +41,10 @@ const Contact = () => {
     <section className={styles.contactSection} id="contact">
       <div className={styles.contactContent}>
         <div className={styles.headerGroup}>
-          <h2 className={styles.contactTitle}>Let's connect</h2>
+          <h2 className={styles.contactTitle}>Låt mig hjälpa dig</h2>
           <p className={styles.contactSubtitle}>
-            Got an idea, a project, or just want to say hello? Drop a message
-            below and let's build something amazing together.
+            Har du en idé, ett projekt eller vill du bara säga hej? Skicka ett
+            meddelande nedan så skapar vi något fantastiskt tillsammans.
           </p>
         </div>
 
@@ -54,14 +54,14 @@ const Contact = () => {
             <input
               type="text"
               name="name" // 3. VIKTIGT: Web3Forms behöver detta!
-              placeholder="Enter your name"
+              placeholder="Ange ditt namn"
               className={styles.contactInput}
               required
             />
             <input
               type="email"
               name="email" // 3. VIKTIGT: Web3Forms behöver detta!
-              placeholder="Enter your email"
+              placeholder="Ange ditt e-post"
               className={styles.contactInput}
               required
             />
@@ -70,25 +70,31 @@ const Contact = () => {
           <textarea
             name="comments" // Ändra gärna till name="message" om du vill att det ska stå "Message" i mejlet du får
             id="comments"
-            placeholder="Enter your comment"
+            placeholder="Vad kan jag hjälpa dig?"
             rows="6"
             className={styles.contactTextarea}
             required
           ></textarea>
 
           {/* Knappen blir inaktiverad medan mejlet skickas */}
-          <button 
-            type="submit" 
+          <button
+            type="submit"
             className={styles.submitButton}
             disabled={isSubmitting}
           >
-            {isSubmitting ? "Sending..." : "Send Message"}
+            {isSubmitting ? "Skickar..." : "Skicka Meddelande"}
           </button>
         </form>
 
         {/* 4. Visa resultatet för användaren precis under formuläret */}
         {result && (
-          <p className={result.includes("Success") ? styles.successMessage : styles.errorMessage}>
+          <p
+            className={
+              result.includes("Success")
+                ? styles.successMessage
+                : styles.errorMessage
+            }
+          >
             {result}
           </p>
         )}
