@@ -37,7 +37,7 @@ const tagIcons = {
 function Projects() {
   return (
     <section className={styles.projectsSection} id="projects">
-      <h2 className={styles.title}>Selected Works</h2>
+      <h2 className={styles.title}>PROJEKT</h2>
       <div className={styles.grid}>
         {myProjects.map((project) => (
           <div key={project.id} className={styles.card}>
