@@ -82,7 +82,7 @@ const Contact = () => {
             className={styles.submitButton}
             disabled={isSubmitting}
           >
-            {isSubmitting ? "Skickar..." : "Skicka Meddelande"}
+            {isSubmitting ? "Skickar..." : "Skicka"}
           </button>
         </form>
 

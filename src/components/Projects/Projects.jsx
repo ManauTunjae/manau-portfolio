@@ -42,11 +42,25 @@ function Projects() {
         {myProjects.map((project) => (
           <div key={project.id} className={styles.card}>
             <div className={styles.imageWrapper}>
-              <img
-                src={project.image}
-                alt={project.title}
-                className={styles.projectImage}
-              />
+              {project.video ? (
+                // Om projektet har en video, visa video-taggen
+                <video
+                  src={project.video}
+                  autoPlay
+                  loop
+                  muted
+                  playsinline
+                  preload="auto"
+                  className={styles.projectImage}
+                />
+              ) : (
+                // Annars, visa en vanlig bild-tagg
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className={styles.projectImage}
+                />
+              )}
             </div>
             <div className={styles.cardGlow}></div>{" "}
             {/* För den snygga effekten */}
