@@ -9,7 +9,7 @@ html, body {
   width: 100%;
   max-width: 100vw;
   overflow-x: hidden; /* Förhindrar sidscroll totalt */
-  background-color: #FFFFFF;
+  background-color: #ffffffcb;
   color: #68788F;
 }
 
