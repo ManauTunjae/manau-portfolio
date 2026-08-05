@@ -56,7 +56,7 @@ export const myProjects = [
       "Samarbetsprojekt med frontend-utvecklare som handlar om en plattform som sammanför olika evenemang från olika städer i Sverige. Backend byggd med Node.js, Express och MongoDB, med fokus på REST API-design och databasstrukturering.",
     tags: ["HTML5", "CSS3", "JavaScript", "Node", "Express", "MongoDB"],
     github: "https://github.com/ManauTunjae/webbshop-2026-fe.git",
-    live: "https://frida1989.github.io/webbshop-2026-fe/index.html",
+    live: "https://eventeraproject.netlify.app/",
     image: "/images/image-eventera.png",
   },
   {
